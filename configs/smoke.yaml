@@ -1,0 +1,16 @@
+base: demo.yaml
+dataset:
+  num_train: 8
+  num_val: 3
+  num_test: 3
+  num_ood: 3
+  path: data/processed/smoke.pt
+model:
+  hidden_dim: 16
+  message_passing_steps: 1
+training:
+  epochs: 2
+  patience: 2
+  batch_size: 4
+loss:
+  physics_warmup_epochs: 0

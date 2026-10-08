@@ -51,13 +51,15 @@ def main(default_command=None):
                 model, dataset[args.split], config["training"]["batch_size"]
             )
             directory = resolve_path(args.output or f"outputs/evaluation/{checkpoint['kind']}/{args.split}")
-            write_json(directory / "metrics.json", {"provenance": "synthetic-only", "split": args.split, "metrics": metrics})
+            write_json(directory / "evaluation_metrics.json", {"provenance": "synthetic-only", "split": args.split, "metrics": metrics})
             plot_evaluation(dataset[args.split], truth, prediction, displacement, directory / "figures")
             result = metrics
         elif command == "screen":
-            result = screen_designs(model, config, args.count or 1000, args.top_k, args.output or "outputs/screening")
+            result = screen_designs(model, config, 1000 if args.count is None else args.count,
+                                    args.top_k, args.output or "outputs/screening")
         elif command == "benchmark":
-            result = benchmark(model, config, args.count or 100, args.repeats, args.output or "outputs/benchmark")
+            result = benchmark(model, config, 100 if args.count is None else args.count,
+                               args.repeats, args.output or "outputs/benchmark")
         else:
             raise ValueError(command)
     print(json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False))

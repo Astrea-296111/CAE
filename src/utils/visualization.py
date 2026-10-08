@@ -1,10 +1,14 @@
 from pathlib import Path
+import os
 
+os.environ.setdefault("MPLCONFIGDIR", "/tmp/cae-matplotlib")
+os.environ.setdefault("XDG_CACHE_HOME", "/tmp/cae-cache")
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.colors import Normalize
+from matplotlib.ticker import MaxNLocator
 from mpl_toolkits.mplot3d.art3d import Line3DCollection
 
 
@@ -22,14 +26,22 @@ def save_figure(fig, path):
 def plot_mesh(graph, path, values=None, title="Synthetic elastic network"):
     pos = graph.pos.numpy()
     edges = graph.edge_index.numpy().T
-    fig = plt.figure(figsize=(8, 5))
+    edges = edges[edges[:, 0] < edges[:, 1]]
+    fig = plt.figure(figsize=(9, 5))
     ax = fig.add_subplot(111, projection="3d")
     ax.add_collection3d(Line3DCollection(pos[edges], colors="#a3a8aa", linewidths=0.5, alpha=0.45))
-    color = values if values is not None else graph.boundary.numpy().astype(float)
-    points = ax.scatter(*pos.T, c=np.asarray(color).ravel(), cmap="coolwarm", s=14)
-    fig.colorbar(points, ax=ax, shrink=0.65, label="u_z (m)" if values is not None else "fixed boundary")
+    if values is None:
+        for mask, color, label in [(~graph.boundary.numpy(), "#4772b2", "Free node"),
+                                    (graph.boundary.numpy(), "#bd4343", "Fixed boundary")]:
+            ax.scatter(*pos[mask].T, c=color, s=20, depthshade=False, label=label)
+        ax.legend(loc="upper left", bbox_to_anchor=(0.94, 0.9), frameon=False)
+    else:
+        points = ax.scatter(*pos.T, c=np.asarray(values).ravel(), cmap="coolwarm", s=20, depthshade=False)
+        fig.colorbar(points, ax=ax, shrink=0.65, label="u_z (m)", pad=0.15)
     ax.set(xlabel="x (m)", ylabel="y (m)", zlabel="z (m)", title=title)
     ax.set_box_aspect(np.maximum(np.ptp(pos, axis=0), 0.1))
+    for axis in (ax.xaxis, ax.yaxis, ax.zaxis):
+        axis.set_major_locator(MaxNLocator(4))
     save_figure(fig, path)
 
 
@@ -78,8 +90,12 @@ def plot_evaluation(graphs, truth, prediction, displacement, output_dir):
             ax.add_collection3d(Line3DCollection(
                 pos[graph.edge_index.numpy().T], colors="#a3a8aa", linewidths=0.4, alpha=0.3
             ))
-            points = ax.scatter(*pos.T, c=values, cmap="coolwarm", norm=norm, s=15)
+            points = ax.scatter(*pos.T, c=values, cmap="coolwarm", norm=norm, s=20, depthshade=False)
             ax.set(xlabel="x (m)", ylabel="y (m)", zlabel="z (m)", title=f"Synthetic: {title}")
             ax.set_box_aspect(np.maximum(np.ptp(pos, axis=0), 0.1))
-        fig.colorbar(points, ax=fig.axes, shrink=0.7, label="u_z (m)", pad=0.08)
+            for axis in (ax.xaxis, ax.yaxis, ax.zaxis):
+                axis.set_major_locator(MaxNLocator(3))
+        fig.subplots_adjust(left=0.02, right=0.85, wspace=0.2)
+        color_axis = fig.add_axes([0.93, 0.22, 0.015, 0.56])
+        fig.colorbar(points, cax=color_axis, label="u_z (m)")
         save_figure(fig, output_dir / "displacement_comparison.png")

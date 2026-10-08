@@ -12,7 +12,7 @@ NODE_FEATURES = (
     "load_z_over_1000N", "region_0", "region_1", "region_2",
 )
 EDGE_FEATURES = ("dx_m", "dy_m", "dz_m", "distance_m", "direction_x",
-                 "direction_y", "direction_z", "stiffness_proxy_over_1e7Nm")
+                 "direction_y", "direction_z", "stiffness_proxy_over_1e7N_per_m")
 
 
 def build_graph(mesh, result=None, sample_id="synthetic"):
