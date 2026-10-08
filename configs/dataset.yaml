@@ -1,0 +1,27 @@
+seed: 42
+dataset:
+  num_train: 300
+  num_val: 50
+  num_test: 50
+  num_ood: 50
+  modes: [frame, mesh]
+  grid_shape: [8, 4, 4]
+  thickness_range: [0.8, 1.2]
+  ood_thickness_range: [1.25, 1.4]
+  noise_std: 0.0
+  path: data/processed/dataset.pt
+training:
+  batch_size: 16
+  lr: 0.001
+  epochs: 100
+  patience: 20
+  threads: 2
+  device: cpu
+model:
+  hidden_dim: 128
+  message_passing_steps: 6
+loss:
+  lambda_stiffness: 1.0
+  lambda_displacement: 1.0
+  lambda_physics: 0.1
+  physics_warmup_epochs: 10

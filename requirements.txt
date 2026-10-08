@@ -1,0 +1,10 @@
+torch==2.6.0
+torch-geometric==2.6.1
+numpy>=1.26,<3
+scipy>=1.12,<2
+pandas>=2.2,<3
+scikit-learn>=1.4,<2
+matplotlib>=3.8,<4
+PyYAML>=6.0,<7
+pytest>=8,<9
+nbformat>=5.10,<6

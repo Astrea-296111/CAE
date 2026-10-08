@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.ipynb_checkpoints/
+data/processed/*
+!data/processed/.gitkeep
+outputs/
+.env
+.env.*
+*.key
+*.pem

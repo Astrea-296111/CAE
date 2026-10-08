@@ -1,0 +1,15 @@
+{
+  "provenance": "synthetic-only",
+  "thickness": 1.0,
+  "young_modulus": 70000000000.0,
+  "poisson_ratio": 0.3,
+  "density": 2700.0,
+  "reinforcement_factor": 1.2,
+  "section_scale": 1.0,
+  "geometry_scale_x": 1.0,
+  "geometry_scale_y": 1.0,
+  "geometry_scale_z": 1.0,
+  "local_morph_factor": 0.02,
+  "brace_probability": 0.6,
+  "load_force": 1000.0
+}
