@@ -1,0 +1,17 @@
+base: dataset.yaml
+dataset:
+  num_train: 120
+  num_val: 30
+  num_test: 30
+  num_ood: 30
+  path: data/processed/demo.pt
+model:
+  hidden_dim: 32
+  message_passing_steps: 3
+training:
+  epochs: 30
+  patience: 12
+  batch_size: 12
+loss:
+  physics_warmup_epochs: 10
+  lambda_physics: 0.01
