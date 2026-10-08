@@ -1,0 +1,32 @@
+{
+  "provenance": "synthetic-only",
+  "count": 100,
+  "repeats": 5,
+  "synthetic_solver_seconds": [
+    0.06037249599989991,
+    0.0585780710000563,
+    0.06169229700003598,
+    0.05970468800001072,
+    0.06058977199995752
+  ],
+  "gnn_inference_seconds": [
+    0.08378413499985982,
+    0.07372527899997294,
+    0.08878128500009552,
+    0.0632118089999949,
+    0.06369612699995741
+  ],
+  "solver_median_seconds": 0.06037249599989991,
+  "inference_median_seconds": 0.07372527899997294,
+  "solver_over_inference_ratio": 0.8188846053729015,
+  "graph_build_seconds": 0.03966376600010335,
+  "ai_with_graph_build_seconds": 0.1133890450000763,
+  "device": "cpu",
+  "torch_version": "2.6.0+cpu",
+  "python_version": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "torch_threads": 2,
+  "batch_size": 12,
+  "scope": "Shared mesh generation excluded; inference includes graph batching and CPU output transfer.",
+  "disclaimer": "Synthetic solver vs AI only. No OptiStruct or industrial speedup claim."
+}

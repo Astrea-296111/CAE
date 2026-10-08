@@ -1,0 +1,18 @@
+{
+  "provenance": "synthetic-only",
+  "split": "test",
+  "metrics": {
+    "MAE": 321800.61666666664,
+    "RMSE": 388068.09177752555,
+    "MAPE_percent": 4.92532912611945,
+    "R2": 0.9645328238070214,
+    "Top5_Recall": 1.0,
+    "Top10_Recall": 0.8,
+    "Top20_Recall": 0.95,
+    "Spearman": 0.9697441601779755,
+    "node_displacement_MAE_m": 4.440970315044979e-06,
+    "node_displacement_RMSE_m": 9.22094113775529e-06,
+    "nonpositive_angle_fraction": 0.0,
+    "mean_torque_consistency_residual": 0.10370997907887605
+  }
+}

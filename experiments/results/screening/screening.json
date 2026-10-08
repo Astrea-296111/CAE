@@ -1,0 +1,69 @@
+{
+  "provenance": "synthetic-only",
+  "candidate_count": 1000,
+  "selected_top_k": 10,
+  "metrics": {
+    "MAE": 341052.6707141507,
+    "RMSE": 510999.10769857536,
+    "MAPE_percent": 5.371762781701578,
+    "R2": 0.9497997783116403,
+    "Top5_Recall": 0.8,
+    "Top10_Recall": 0.6,
+    "Top20_Recall": 0.7,
+    "Spearman": 0.9870627150627151
+  },
+  "selected_indices": [
+    674,
+    971,
+    64,
+    973,
+    109,
+    946,
+    485,
+    696,
+    291,
+    408
+  ],
+  "selected_solver_calls": 10,
+  "additional_oracle_audit_calls": 990,
+  "inference_seconds": 0.7916561780000393,
+  "selected_solver_seconds": 0.007638361000090299,
+  "best_predicted_design": {
+    "index": 674,
+    "parameters": {
+      "thickness": 1.1871789257532406,
+      "young_modulus": 77878382469.9859,
+      "poisson_ratio": 0.2591639243295369,
+      "density": 2406.024761764058,
+      "reinforcement_factor": 1.524955116837344,
+      "section_scale": 1.2533837781346737,
+      "geometry_scale_x": 1.005779575400445,
+      "geometry_scale_y": 1.006422695272149,
+      "geometry_scale_z": 0.9396328720016083,
+      "local_morph_factor": -0.04532905011569743,
+      "brace_probability": 0.5909718201134704,
+      "load_force": 926.4320104343442
+    },
+    "predicted_stiffness": 12711734.0,
+    "true_stiffness": 14269523.036171956
+  },
+  "best_true_design": {
+    "index": 946,
+    "parameters": {
+      "thickness": 1.199583879008017,
+      "young_modulus": 89054148578.3742,
+      "poisson_ratio": 0.31151173923611014,
+      "density": 2415.2865617647903,
+      "reinforcement_factor": 1.2927294149617587,
+      "section_scale": 1.2460331212687525,
+      "geometry_scale_x": 0.9502696179614303,
+      "geometry_scale_y": 1.0867505211746882,
+      "geometry_scale_z": 1.0281398789578589,
+      "local_morph_factor": -0.03496704642814196,
+      "brace_probability": 0.6906905500591407,
+      "load_force": 1116.8022293252054
+    },
+    "true_stiffness": 15646966.765363207
+  },
+  "disclaimer": "Full-pool labels are synthetic audit results, not an industrial speedup benchmark."
+}

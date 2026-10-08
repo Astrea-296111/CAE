@@ -1,0 +1,42 @@
+{
+  "provenance": "synthetic-only",
+  "selected": [
+    70,
+    60,
+    45,
+    84,
+    79,
+    89,
+    86,
+    54,
+    37,
+    91
+  ],
+  "prediction_variance": [
+    621490274304.0,
+    550753992704.0,
+    444507455488.0,
+    430540455936.0,
+    398842429440.0,
+    376968282112.0,
+    322091745280.0,
+    316830187520.0,
+    309824028672.0,
+    292351246336.0
+  ],
+  "solver_calls": 10,
+  "next_step": "Retrain with dataset.path set to augmented_dataset.pt; test splits remain fixed.",
+  "limitation": "Ensemble variance is an acquisition score, not a calibrated confidence interval.",
+  "ensemble_training_epochs": 5,
+  "ensemble_seeds": [
+    42,
+    43,
+    44
+  ],
+  "augmented_sizes": {
+    "train": 130,
+    "val": 30,
+    "test": 30,
+    "ood": 30
+  }
+}
