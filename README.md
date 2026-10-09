@@ -1,143 +1,146 @@
-# AI-CAE GNN Surrogate Modeling
+# CAE Graph Surrogate
 
-**Synthetic structural graph surrogate modeling and torsional-stiffness design screening.**
+面向结构方案筛选的图代理模型工具链。输入结构参数、连接、材料、载荷与约束，
+预测扭转刚度和节点位移，通过风险检查后排序，将 Top-K 与风险候选交给求解器复核。
 
-> This repository contains only synthetic data. No proprietary automotive geometry,
-> finite-element model, material database, solver results, or company information is included.
->
-> 本项目所有数据均为合成数据，仅用于技术路线验证和工程架构展示，不包含任何真实企业数据、车型数据或商业机密。
+内置数据由合成弹性网络生成，来源记为 `synthetic-only`；预测位移分量为 `u_z`，
+刚度单位为 `N·m/rad`。商业 OptiStruct 适配器仍是扩展接口。
 
-项目源于车身 CAE 设计迭代中的重复求解问题，复现参数基线、图代理模型、多任务
-学习及候选筛选流程。它是个人研究原型。合成标量弹性网络不等同于壳梁 FEM，
-OptiStruct 接口是未实现的扩展点。所有指标均为 **Synthetic Experiment**。
+## 安装
 
-![Synthetic mesh and fixed boundary](experiments/results/figures/synthetic_mesh.png)
-
-## Workflow
-
-```mermaid
-flowchart LR
-  A[Synthetic Design] --> B[Frame or Mesh Graph]
-  B --> C[Synthetic Elastic Solver]
-  C --> D[Stiffness and Displacement]
-  D --> E[Train / ID / OOD Dataset]
-  E --> F[Baselines and GNN]
-  F --> G[Multi-task and Physics Consistency]
-  G --> H[Candidate Top-K Screening]
-  H --> I[Synthetic Validation]
-  I --> J[Future Authorized CAE Adapter]
-```
-
-## Quick Start
-
-Python 3.10+; the executed demo used Python 3.12 and CPU PyTorch 2.6.0. No GPU,
-commercial solver or private dataset is required. Run from the repository root:
+Python 3.10+，支持 CPU。以下命令在仓库根目录运行：
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
-python -m pip install -r requirements.txt
+python -m pip install -e .
 python -m pytest -q
-python scripts/run_experiments.py --config configs/demo.yaml
 ```
 
-`run_experiments.py` generates all four splits, trains seven model configurations,
-evaluates ID/OOD, screens 1000 designs, measures timing, and writes results. It replaces
-the requested report directory; use `--report outputs/my-results` for a separate run.
-Dependency versions of the executed run are recorded in `experiments/results/environment.json`.
+安装后可用 `cae` 或 `python -m src.cli` 调用。
 
-Individual commands, verified in the current environment:
+## 批量筛选
+
+仓库包含 100 个可复现的候选及配套 checkpoint，可直接运行：
 
 ```bash
-python scripts/generate_dataset.py --config configs/demo.yaml
-python scripts/train_baseline.py --config configs/demo.yaml
-python scripts/train_gcn.py --config configs/demo.yaml
-python scripts/train_meshgraphnet.py --config configs/demo.yaml
-python scripts/train_multitask.py --config configs/demo.yaml
-python scripts/evaluate.py --checkpoint experiments/results/demo_physics.pt --split test
-python scripts/design_screening.py --checkpoint experiments/results/demo_physics.pt --count 1000 --top-k 10
-python scripts/benchmark_inference.py --checkpoint experiments/results/demo_physics.pt --count 100 --repeats 5
+cae screen \
+  --checkpoint experiments/results/batch_physics.pt \
+  --input data/synthetic/candidates.json \
+  --policy configs/screening.yaml \
+  --top-k 10 \
+  --output outputs/screening/run-001
 ```
 
-For multi-task training without physics, use:
+输出目录必须为空。每次运行产生独立的结果和版本信息。
+
+| 文件 | 内容 |
+|---|---|
+| `summary.json` | 模型/数据/输入哈希、策略、分流计数、求解调用次数和阶段耗时 |
+| `candidates.csv` / `predictions.json` | 刚度预测、风险原因、处理状态、代理排名及复核排名 |
+| `displacements.npz` | 节点位移；按预测记录的 `displacement_key` 读取 |
+| `verification_queue.json` | 需要求解复核的完整候选参数 |
+| `verified.csv` | 求解成功的候选，按复核刚度排序 |
+| `events.jsonl` | 候选分流、求解状态和错误记录 |
+
+候选文件使用 `schema_version: 1`，每条记录包含唯一的 `sample_id`、`mesh_seed`、
+`mode`、`grid_shape` 和 `parameters`。随机种子固定网格扰动与连接，输入不携带标签。
+生成另一批候选：
 
 ```bash
-python -m src.cli train --model multitask --config configs/demo.yaml
+cae candidates --config configs/demo.yaml --count 500 \
+  --candidate-seed 2027 --ood-fraction 0.2 --output outputs/candidates-500.json
 ```
 
-The larger `configs/dataset.yaml` uses 300/50/50/50 samples, hidden dimension 128,
-6 processing steps and up to 100 epochs. That full budget was not executed here.
-`configs/smoke.yaml` provides a small command-validation run.
+## 分流策略
 
-## Executed Synthetic Results
+`configs/screening.yaml` 控制风险阈值，独立于模型权重：
 
-Seed 42, 120/30/30/30 samples, 32 hidden dimensions, 3 processing steps, at most 30 epochs.
+- 参数超出训练集经验范围、出现未覆盖的网格模式或节点规模，进入求解回退。
+- 位移缺失、固定端位移非零、扭转角非正或 `|K_pred × θ / T − 1| > 0.25`，进入求解回退。
+- 可信候选按预测刚度排序，前 K 个进入求解复核，其余记为 `screened_out`。
+- 单批推理失败时，该批合法候选全部回退；单个求解失败记为 `solver_failed`，不进入最终排名。
+- 非法参数、重复 ID 和不兼容的特征契约会被检查。模型/预处理契约不匹配时停止任务。
 
-| Model | ID R² | ID MAPE | Thickness OOD R² |
+训练域只由训练输入计算；`domain_margin: 0.02` 表示在各参数经验跨度两端扩展 2%。
+它是范围检查，不是经过校准的置信区间。默认要求位移输出，纯刚度模型需明确调整策略。
+
+全量标签仅在显式审计模式下生成：
+
+```bash
+cae screen --checkpoint experiments/results/batch_physics.pt \
+  --input data/synthetic/candidates.json --top-k 10 --audit \
+  --output outputs/screening/audit-001
+```
+
+审计模式另写 `oracle.csv`，单独统计附加调用；仅当整个候选池标签及预测完整时计算
+全池回归和排名指标。审计结果不会改变正常分流或复核排名。
+
+## 训练与评估
+
+```bash
+cae generate --config configs/demo.yaml
+cae baseline --config configs/demo.yaml
+cae train --model gcn --config configs/demo.yaml
+cae train --model meshgraphnet --config configs/demo.yaml
+cae train --model multitask --config configs/demo.yaml
+cae train --model physics --config configs/demo.yaml --output outputs/physics
+cae evaluate --checkpoint outputs/physics/best.pt --split test
+cae evaluate --checkpoint outputs/physics/best.pt --split ood
+```
+
+MeshGraphNet 使用 18 维节点特征、8 维边特征，经编码、消息传递后分别输出图级刚度
+与节点位移。固定边界位移直接归零。训练使用 train-only normalization、物理损失
+warm-up、转角下限、梯度裁剪和验证集早停。
+
+`best.pt` 保存权重、归一化统计、特征顺序及单位、训练域、配置和数据哈希。
+`history.json` 记录刚度/位移/物理损失、裁剪前梯度范数和每轮耗时；评估同时输出
+MAPE、R²、P90/P95、位移误差、物理残差和排序指标。checkpoint 与 PyG 数据文件仅加载可信来源。
+历史 v0 checkpoint 可继续评估；批量筛选要求重新训练生成 v1 契约。
+
+## 实验记录
+
+当前批处理模型：seed 42，train/val/test/OOD = 120/30/30/30，hidden dim 32，
+3 轮消息传递，30 个 epoch，CPU。原始指标在
+[`batch_training_metrics.json`](experiments/results/batch_training_metrics.json)。
+
+| 测试集 | R² | MAPE | P90 相对误差 |
 |---|---:|---:|---:|
-| Linear | 0.8913 | 8.70% | 0.7400 |
-| Random Forest | 0.7502 | 13.62% | -0.8550 |
-| MLP | 0.8668 | 9.14% | 0.7522 |
-| GCN | 0.4996 | 15.66% | -1.2913 |
-| MeshGraphNet-style | 0.9527 | 6.19% | 0.5752 |
-| Multi-task | 0.9589 | 5.22% | 0.6273 |
-| Multi-task + Physics | 0.9645 | 4.93% | 0.6478 |
+| ID，30 个候选 | 0.9482 | 6.15% | 11.88% |
+| 板厚 OOD，30 个候选 | 0.7049 | 10.29% | 21.97% |
 
-Parameter baselines do not see the realized topology. This comparison includes an input
-information difference. One seed and 30 ID test designs do not establish universal model superiority.
-Physics improves stiffness error slightly in this run but does not improve ID displacement
-RMSE or torque consistency. See the [ablation](experiments/ablation_study.md).
+固定候选池 seed 2026，共 100 个，其中 20 个板厚 OOD：
 
-For 1000 independent synthetic candidates, Top-5/10/20 recall is **0.8/0.6/0.7**,
-and Spearman correlation is **0.9871**. Ten solver calls validate selected designs;
-990 additional calls provide the full-pool oracle audit required for recall.
+| 项目 | 本次运行 |
+|---|---:|
+| 排名选中 / 风险回退 | 10 / 35 |
+| 正常筛选求解调用 | 45 / 100 |
+| 筛选阶段调用减少 | 55% |
+| 全量审计附加调用 | 55 |
+| 全池 Spearman / 预测 Top-10 Recall | 0.9819 / 80% |
+| 45 个复核候选覆盖真实 Top-10 | 10 / 10 |
 
-The median timing for 100 designs is **0.0604 s synthetic solver vs 0.0737 s model inference**,
-plus **0.0397 s graph construction**. The tiny synthetic solver is faster in this run.
-**No OptiStruct speedup or industrial performance claim is made.**
+运行记录见 [`batch_screening`](experiments/results/batch_screening) 和
+[`batch_audit`](experiments/results/batch_audit)。这些数值来自本仓库合成样本的实际运行；
+减少求解次数不等于同等比例的耗时收益，当前小规模合成求解器本身很快。
+历史七模型对照保存在 [`comparison.csv`](experiments/results/comparison.csv)。
 
-![Synthetic prediction vs truth](experiments/results/figures/prediction_vs_truth.png)
-![Synthetic true and predicted displacement](experiments/results/figures/displacement_comparison.png)
+## 代码结构
 
-## Architecture and Evidence
+| 模块 | 职责 |
+|---|---|
+| `src/data` | 合成网格、求解标签、构图、候选文件与特征契约 |
+| `src/models` | MLP、GCN、MeshGraphNet 与多任务输出 |
+| `src/losses` | 监督损失与扭矩/转角一致性 |
+| `src/training` | 训练、评估、全池实验与基准计时 |
+| `src/inference` | 风险检查、Top-K、回退和批处理结果 |
+| `src/cae` | 求解器接口与合成适配器 |
+| `tests` | 图完整性、批处理、数值稳定性、契约及故障分流测试 |
 
-- [Detailed Chinese project report](docs/PROJECT_REPORT_CN.md): background, mathematics, design, limitations and future work.
-- [Interview guide](docs/INTERVIEW_GUIDE_CN.md): 1/3/5-minute introductions and 38 questions with answers.
-- [Real CAE migration guide](docs/REAL_CAE_MIGRATION_GUIDE_CN.md): parsing, authorization, large graphs and validation.
-- [Data design](docs/DATA_DESIGN_CN.md), [model design](docs/MODEL_DESIGN_CN.md), [experiment design](docs/EXPERIMENT_DESIGN_CN.md).
-- [Validation record](docs/VALIDATION_CN.md), [comparison CSV](experiments/results/comparison.csv), [raw metrics](experiments/results/metrics.json).
-- [Graph architecture](assets/architecture.md), [notebooks](notebooks), [tests](tests).
-
-`src/data` builds synthetic meshes and labels; `src/models` implements MLP, GCN and
-MeshGraphNet; `src/losses` computes supervision and torque consistency;
-`src/training` contains the experiment pipeline; `src/cae` isolates solver adapters.
-Training-only normalization and exact zero boundary displacement are part of the model.
-Checkpoints and PyG datasets use Python serialization: load only trusted project-generated files.
-
-## Optional Active Learning
-
-Train independently seeded models of the same architecture on the same data file,
-then pass at least two checkpoints:
-
-```bash
-python experiments/train_ensemble_demo.py --config configs/demo.yaml
-python experiments/active_learning_demo.py \
-  --checkpoint outputs/ensemble/seed42/best.pt \
-  --checkpoint outputs/ensemble/seed43/best.pt \
-  --checkpoint outputs/ensemble/seed44/best.pt \
-  --count 100 --queries 10
-```
-
-The script queries high-variance candidates and creates a new dataset with added training
-graphs. Test splits remain fixed. Variance is an acquisition score, not a calibrated interval.
-The optional acquisition was smoke-tested; no sample-efficiency gain is claimed.
-
-## Scope
-
-The solver is a sparse scalar spring network with nonlinear dependence on design parameters,
-not shell/beam FEM. Only `u_z` is predicted. Physics loss enforces a global torque-angle relation,
-not local equilibrium. Real automotive deployment needs authorized data, richer element features,
-family-based splits, uncertainty calibration, large-graph methods and independent CAE verification.
+完整对照实验使用 `python scripts/run_experiments.py --config configs/demo.yaml`；
+小规模链路验证使用 `configs/smoke.yaml`。技术细节见
+[数据设计](docs/DATA_DESIGN_CN.md)、[模型设计](docs/MODEL_DESIGN_CN.md)和
+[CAE 接入](docs/REAL_CAE_MIGRATION_GUIDE_CN.md)。
 
 License: [MIT](LICENSE).

@@ -1,0 +1,48 @@
+{
+  "provenance": "synthetic-only",
+  "created_at": "2026-10-09T09:02:09.225058+00:00",
+  "checkpoint_sha256": "8a045ff5cd9edc18c19e952ffa4cf8a42c4eae5f5f59be18abd5d3a578d5882a",
+  "dataset_sha256": "5d5d9ee2ab09c52852b513a0aed9b5ba4b46c8747ef13108aee00a10a66e3fda",
+  "feature_schema_sha256": "b55a5ece662c25676129cf341942f169532ee54b8526d72050608ef1727d4c15",
+  "candidate_manifest_sha256": "c0afa6eb4b8ce5f99b6b70db417e30efa5f9d223cf876a1d394e3a0e0d857e29",
+  "model_kind": "physics",
+  "policy": {
+    "max_physics_residual": 0.25,
+    "domain_margin": 0.02,
+    "require_displacement": true,
+    "max_nodes": 10000
+  },
+  "candidate_count": 100,
+  "valid_candidate_count": 100,
+  "invalid_candidate_count": 0,
+  "requested_top_k": 10,
+  "selected_top_k": 10,
+  "fallback_count": 35,
+  "fallback_rate": 0.35,
+  "ood_count": 21,
+  "ood_rate": 0.21,
+  "inference_failed_count": 0,
+  "inference_success_rate": 1.0,
+  "reason_counts": {
+    "physics_residual": 16,
+    "ood:thickness": 20,
+    "ood:geometry_scale_x": 1
+  },
+  "screening_solver_calls": 45,
+  "screening_solver_failures": 0,
+  "verified_count": 45,
+  "solver_call_reduction_percent": 55.00000000000001,
+  "mean_physics_residual": 0.1387450765982238,
+  "audit_enabled": false,
+  "additional_oracle_audit_calls": 0,
+  "audit_solver_failures": 0,
+  "total_solver_calls": 45,
+  "audit_metrics": null,
+  "timing_seconds": {
+    "graph_build": 0.32239623700002085,
+    "inference": 0.17545709799992437,
+    "verification": 0.043369121000068844,
+    "audit": 2.7999999474559445e-07,
+    "compute_total": 0.54163250900001
+  }
+}

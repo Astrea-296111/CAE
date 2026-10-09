@@ -1,0 +1,2410 @@
+{
+  "schema_version": 1,
+  "provenance": "synthetic-only",
+  "generation": {
+    "seed": 2026,
+    "thickness_ood_count": 20
+  },
+  "candidates": [
+    {
+      "sample_id": "design-0001",
+      "mesh_seed": 486046538,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9723648242737726,
+        "young_modulus": 76527224818.90381,
+        "poisson_ratio": 0.25128404823668066,
+        "density": 2668.6211409232324,
+        "reinforcement_factor": 1.2921446409059132,
+        "section_scale": 0.8976987999357771,
+        "geometry_scale_x": 1.0189731742012107,
+        "geometry_scale_y": 0.9870626311901289,
+        "geometry_scale_z": 0.95999830074903,
+        "local_morph_factor": -0.03487006545165365,
+        "brace_probability": 0.8122368400345257,
+        "load_force": 1118.9849262085731
+      }
+    },
+    {
+      "sample_id": "design-0002",
+      "mesh_seed": 1129183072,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9380402314669168,
+        "young_modulus": 87872791639.18594,
+        "poisson_ratio": 0.30633773745025455,
+        "density": 2659.6576437719714,
+        "reinforcement_factor": 1.7203596792033777,
+        "section_scale": 0.9596709019509313,
+        "geometry_scale_x": 1.0391989740267566,
+        "geometry_scale_y": 0.9627640654524741,
+        "geometry_scale_z": 0.95231060926236,
+        "local_morph_factor": 0.02410090674010265,
+        "brace_probability": 0.3595243852351504,
+        "load_force": 997.2441291939523
+      }
+    },
+    {
+      "sample_id": "design-0003",
+      "mesh_seed": 1302899109,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.2783359547131687,
+        "young_modulus": 79249626334.33778,
+        "poisson_ratio": 0.304848306462463,
+        "density": 2772.901955775563,
+        "reinforcement_factor": 1.297715453437464,
+        "section_scale": 1.010096629960317,
+        "geometry_scale_x": 0.9989659355834113,
+        "geometry_scale_y": 0.9939941824812341,
+        "geometry_scale_z": 1.0351278445699248,
+        "local_morph_factor": 0.00926130053954391,
+        "brace_probability": 0.4913894500947264,
+        "load_force": 800.7209414427276
+      }
+    },
+    {
+      "sample_id": "design-0004",
+      "mesh_seed": 1245601618,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.0077536884577343,
+        "young_modulus": 63061786552.4508,
+        "poisson_ratio": 0.29999550224111937,
+        "density": 2456.0675600967706,
+        "reinforcement_factor": 1.7237632580426823,
+        "section_scale": 1.2948680837922517,
+        "geometry_scale_x": 0.9117470435031166,
+        "geometry_scale_y": 0.9716462437182763,
+        "geometry_scale_z": 1.0460129155638167,
+        "local_morph_factor": -0.022291424253854074,
+        "brace_probability": 0.5969348308551142,
+        "load_force": 966.6283849260119
+      }
+    },
+    {
+      "sample_id": "design-0005",
+      "mesh_seed": 1705168719,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.1833857603856135,
+        "young_modulus": 85535817052.66707,
+        "poisson_ratio": 0.3120935465200049,
+        "density": 2496.164587600842,
+        "reinforcement_factor": 1.7576496666493302,
+        "section_scale": 0.811816214335888,
+        "geometry_scale_x": 0.9595418912841723,
+        "geometry_scale_y": 0.9563226986201192,
+        "geometry_scale_z": 1.034365196344541,
+        "local_morph_factor": -0.0015164320712986248,
+        "brace_probability": 0.26502198413021305,
+        "load_force": 805.1431550979721
+      }
+    },
+    {
+      "sample_id": "design-0006",
+      "mesh_seed": 1662607948,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9965933329363704,
+        "young_modulus": 74055284853.61604,
+        "poisson_ratio": 0.3064023863865534,
+        "density": 2934.275464979808,
+        "reinforcement_factor": 1.7347174862964776,
+        "section_scale": 0.8941285805511825,
+        "geometry_scale_x": 1.088424173894107,
+        "geometry_scale_y": 1.0575453252645568,
+        "geometry_scale_z": 1.0278052504445934,
+        "local_morph_factor": 0.01915287209891392,
+        "brace_probability": 0.5822421609304498,
+        "load_force": 1166.9053198571364
+      }
+    },
+    {
+      "sample_id": "design-0007",
+      "mesh_seed": 1297758184,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.339897398840437,
+        "young_modulus": 82569722474.86603,
+        "poisson_ratio": 0.263476145162113,
+        "density": 2769.3049646153204,
+        "reinforcement_factor": 1.3222667804236592,
+        "section_scale": 1.1830181707331415,
+        "geometry_scale_x": 0.9135428721241081,
+        "geometry_scale_y": 1.0213628762068407,
+        "geometry_scale_z": 1.0714157379973295,
+        "local_morph_factor": 0.015401743483570873,
+        "brace_probability": 0.4249363868174645,
+        "load_force": 1062.3184223687556
+      }
+    },
+    {
+      "sample_id": "design-0008",
+      "mesh_seed": 500928920,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.067437115364036,
+        "young_modulus": 55133776057.682144,
+        "poisson_ratio": 0.27799917441958927,
+        "density": 2419.631026918149,
+        "reinforcement_factor": 1.0671275111701526,
+        "section_scale": 1.0773848099082532,
+        "geometry_scale_x": 0.9463396442784615,
+        "geometry_scale_y": 1.0032165175275465,
+        "geometry_scale_z": 1.0319139066145682,
+        "local_morph_factor": 0.045742341521942814,
+        "brace_probability": 0.44854271021197706,
+        "load_force": 927.4715865754981
+      }
+    },
+    {
+      "sample_id": "design-0009",
+      "mesh_seed": 726177700,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.8471398578097582,
+        "young_modulus": 76527334586.29057,
+        "poisson_ratio": 0.331965458143721,
+        "density": 2683.802916517793,
+        "reinforcement_factor": 1.446637917558838,
+        "section_scale": 1.2792400568478093,
+        "geometry_scale_x": 1.039783034330498,
+        "geometry_scale_y": 1.0490069773295305,
+        "geometry_scale_z": 1.0778996714609057,
+        "local_morph_factor": -0.03410513086990573,
+        "brace_probability": 0.6551162408244835,
+        "load_force": 1086.9578021305574
+      }
+    },
+    {
+      "sample_id": "design-0010",
+      "mesh_seed": 673594198,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.3015678319002841,
+        "young_modulus": 77551788228.52191,
+        "poisson_ratio": 0.3104400605802606,
+        "density": 2645.616620293599,
+        "reinforcement_factor": 1.0813486056657307,
+        "section_scale": 0.9765242168915702,
+        "geometry_scale_x": 1.092696949624096,
+        "geometry_scale_y": 0.9433047003225598,
+        "geometry_scale_z": 0.9227275987176351,
+        "local_morph_factor": -0.015878469031559067,
+        "brace_probability": 0.2706865544741875,
+        "load_force": 906.8795727345085
+      }
+    },
+    {
+      "sample_id": "design-0011",
+      "mesh_seed": 1808670706,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9275128325782318,
+        "young_modulus": 73435580581.87303,
+        "poisson_ratio": 0.27387447795549513,
+        "density": 2800.7879546391027,
+        "reinforcement_factor": 1.102125110131906,
+        "section_scale": 1.1949046916377526,
+        "geometry_scale_x": 0.9845892089543187,
+        "geometry_scale_y": 0.9367320774182863,
+        "geometry_scale_z": 1.0516499131296984,
+        "local_morph_factor": 0.006513904683267929,
+        "brace_probability": 0.5067015072316783,
+        "load_force": 896.2504167255092
+      }
+    },
+    {
+      "sample_id": "design-0012",
+      "mesh_seed": 1963779569,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9461140226813842,
+        "young_modulus": 51723627625.38383,
+        "poisson_ratio": 0.346536926984468,
+        "density": 2418.278884874937,
+        "reinforcement_factor": 1.0963752620990994,
+        "section_scale": 1.0329062654976897,
+        "geometry_scale_x": 0.9415709883143868,
+        "geometry_scale_y": 0.9670270075172192,
+        "geometry_scale_z": 1.0135130483866681,
+        "local_morph_factor": 0.054941034271074385,
+        "brace_probability": 0.8554185569804913,
+        "load_force": 829.5583903380941
+      }
+    },
+    {
+      "sample_id": "design-0013",
+      "mesh_seed": 1677970478,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.8671294620528981,
+        "young_modulus": 82457314900.12933,
+        "poisson_ratio": 0.2796347217848199,
+        "density": 2830.700614369739,
+        "reinforcement_factor": 1.5750345640220216,
+        "section_scale": 1.2252756298781775,
+        "geometry_scale_x": 1.0959251697702987,
+        "geometry_scale_y": 0.9550961705726004,
+        "geometry_scale_z": 1.0256616917348782,
+        "local_morph_factor": 0.028711295476444104,
+        "brace_probability": 0.2557405363029247,
+        "load_force": 1065.1845351075394
+      }
+    },
+    {
+      "sample_id": "design-0014",
+      "mesh_seed": 1832477123,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.8645876170643804,
+        "young_modulus": 71978862313.39037,
+        "poisson_ratio": 0.29618835970775675,
+        "density": 2746.2478997759436,
+        "reinforcement_factor": 1.5135340723226856,
+        "section_scale": 1.049334430674251,
+        "geometry_scale_x": 1.0810301414878274,
+        "geometry_scale_y": 0.9355828396782009,
+        "geometry_scale_z": 0.9577583298018851,
+        "local_morph_factor": -0.017253403058389793,
+        "brace_probability": 0.7420674140550627,
+        "load_force": 1060.8392467463818
+      }
+    },
+    {
+      "sample_id": "design-0015",
+      "mesh_seed": 690449311,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.3616662835890874,
+        "young_modulus": 80861481516.26978,
+        "poisson_ratio": 0.3270241465572452,
+        "density": 2447.0237429533117,
+        "reinforcement_factor": 1.169711319060618,
+        "section_scale": 1.2476925135663106,
+        "geometry_scale_x": 1.0758864119743423,
+        "geometry_scale_y": 0.9411145315193346,
+        "geometry_scale_z": 1.0102751316629432,
+        "local_morph_factor": -0.02847800898627826,
+        "brace_probability": 0.4913993400962916,
+        "load_force": 808.3779376649625
+      }
+    },
+    {
+      "sample_id": "design-0016",
+      "mesh_seed": 443289330,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9082723605783641,
+        "young_modulus": 86765219638.08296,
+        "poisson_ratio": 0.30879702166328254,
+        "density": 2506.5098960589694,
+        "reinforcement_factor": 1.342051634033072,
+        "section_scale": 1.0464680810949771,
+        "geometry_scale_x": 1.0274720234852113,
+        "geometry_scale_y": 1.0064895699696719,
+        "geometry_scale_z": 0.9841985414688688,
+        "local_morph_factor": -0.022704838586963476,
+        "brace_probability": 0.6024996561613214,
+        "load_force": 1190.3328054682916
+      }
+    },
+    {
+      "sample_id": "design-0017",
+      "mesh_seed": 605075501,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.1548048586873778,
+        "young_modulus": 50610897407.34596,
+        "poisson_ratio": 0.27030974028229965,
+        "density": 2918.8607875938287,
+        "reinforcement_factor": 1.4555783175958155,
+        "section_scale": 1.0437790393185193,
+        "geometry_scale_x": 0.9737608577362658,
+        "geometry_scale_y": 0.9590531425779002,
+        "geometry_scale_z": 1.03576595931071,
+        "local_morph_factor": -0.016111793330399964,
+        "brace_probability": 0.5046642951846305,
+        "load_force": 1110.7393151710346
+      }
+    },
+    {
+      "sample_id": "design-0018",
+      "mesh_seed": 1187530463,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.3990485280121967,
+        "young_modulus": 69396609480.28531,
+        "poisson_ratio": 0.2638169055000507,
+        "density": 2414.954161461063,
+        "reinforcement_factor": 1.3957253644464707,
+        "section_scale": 0.8381774957426641,
+        "geometry_scale_x": 0.9235426159964689,
+        "geometry_scale_y": 0.9469678158979701,
+        "geometry_scale_z": 1.0983986195882998,
+        "local_morph_factor": -0.040532573097532096,
+        "brace_probability": 0.27709248329819125,
+        "load_force": 1166.3695097907807
+      }
+    },
+    {
+      "sample_id": "design-0019",
+      "mesh_seed": 2031912461,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.0959602809403357,
+        "young_modulus": 64189338218.81458,
+        "poisson_ratio": 0.3433832508989194,
+        "density": 2985.660381214241,
+        "reinforcement_factor": 1.4467645614222964,
+        "section_scale": 1.2934201382639436,
+        "geometry_scale_x": 1.0011588705637515,
+        "geometry_scale_y": 0.9879480567868851,
+        "geometry_scale_z": 1.0570868002919804,
+        "local_morph_factor": 0.017309720319640662,
+        "brace_probability": 0.340371249678265,
+        "load_force": 1005.9757143982723
+      }
+    },
+    {
+      "sample_id": "design-0020",
+      "mesh_seed": 1335884596,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.1502639406252715,
+        "young_modulus": 71697835447.85484,
+        "poisson_ratio": 0.2546187028543431,
+        "density": 2962.655355649687,
+        "reinforcement_factor": 1.7995491742169478,
+        "section_scale": 1.1686527126436304,
+        "geometry_scale_x": 0.9862646907617705,
+        "geometry_scale_y": 1.01828385640696,
+        "geometry_scale_z": 0.902046380431334,
+        "local_morph_factor": -0.046986081238474316,
+        "brace_probability": 0.4316996067193416,
+        "load_force": 964.5074753954497
+      }
+    },
+    {
+      "sample_id": "design-0021",
+      "mesh_seed": 35346420,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.8682919106353018,
+        "young_modulus": 54644189443.83644,
+        "poisson_ratio": 0.3197463933308639,
+        "density": 2932.8192719921785,
+        "reinforcement_factor": 1.703733801838059,
+        "section_scale": 1.1709581005157044,
+        "geometry_scale_x": 1.0967134600169341,
+        "geometry_scale_y": 1.0044184213181555,
+        "geometry_scale_z": 1.054893754595096,
+        "local_morph_factor": -0.00993870787342914,
+        "brace_probability": 0.4472789624316117,
+        "load_force": 1164.3288368663866
+      }
+    },
+    {
+      "sample_id": "design-0022",
+      "mesh_seed": 1623387756,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.0985884147834943,
+        "young_modulus": 69880904628.0167,
+        "poisson_ratio": 0.2612212924068318,
+        "density": 2476.125646743936,
+        "reinforcement_factor": 1.4080980690616003,
+        "section_scale": 1.1538389489501852,
+        "geometry_scale_x": 1.0484968423346481,
+        "geometry_scale_y": 0.9671394167222904,
+        "geometry_scale_z": 0.9018421315993143,
+        "local_morph_factor": 0.004002771146533704,
+        "brace_probability": 0.3326968943105435,
+        "load_force": 928.0479870070154
+      }
+    },
+    {
+      "sample_id": "design-0023",
+      "mesh_seed": 924936247,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9567331889243191,
+        "young_modulus": 68360065453.696655,
+        "poisson_ratio": 0.2550458948610459,
+        "density": 2509.809248899257,
+        "reinforcement_factor": 1.6735164670015403,
+        "section_scale": 1.0559407136826473,
+        "geometry_scale_x": 1.07702354120503,
+        "geometry_scale_y": 1.0714602001773195,
+        "geometry_scale_z": 0.9386339951397319,
+        "local_morph_factor": -0.012048379292996375,
+        "brace_probability": 0.5680448100556987,
+        "load_force": 839.0060598541417
+      }
+    },
+    {
+      "sample_id": "design-0024",
+      "mesh_seed": 1216440259,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.1365946233614728,
+        "young_modulus": 83068544806.3526,
+        "poisson_ratio": 0.2883289363071703,
+        "density": 2823.9508093277263,
+        "reinforcement_factor": 1.4143464879485323,
+        "section_scale": 1.1738267598797194,
+        "geometry_scale_x": 0.9630370206837421,
+        "geometry_scale_y": 0.994807244451898,
+        "geometry_scale_z": 1.0785912661426251,
+        "local_morph_factor": 0.03799728846348874,
+        "brace_probability": 0.41697462861984114,
+        "load_force": 1152.7084323393246
+      }
+    },
+    {
+      "sample_id": "design-0025",
+      "mesh_seed": 183300961,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.072951977937759,
+        "young_modulus": 78460422032.53198,
+        "poisson_ratio": 0.290168496892501,
+        "density": 2896.2562842080156,
+        "reinforcement_factor": 1.372281373660578,
+        "section_scale": 1.280344351013869,
+        "geometry_scale_x": 1.0873397869496075,
+        "geometry_scale_y": 1.0800530834305724,
+        "geometry_scale_z": 1.0816706922108645,
+        "local_morph_factor": -0.04235441448699098,
+        "brace_probability": 0.6538338707735538,
+        "load_force": 1096.4458160330887
+      }
+    },
+    {
+      "sample_id": "design-0026",
+      "mesh_seed": 856242396,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.0116883942651063,
+        "young_modulus": 58057236341.478004,
+        "poisson_ratio": 0.26607865045281126,
+        "density": 2869.8805975662904,
+        "reinforcement_factor": 1.1196844612746346,
+        "section_scale": 1.164098485651094,
+        "geometry_scale_x": 0.9154136975830843,
+        "geometry_scale_y": 0.9824504221627034,
+        "geometry_scale_z": 0.9048022662987112,
+        "local_morph_factor": 0.01924472057927605,
+        "brace_probability": 0.4050411131565962,
+        "load_force": 987.0800337141659
+      }
+    },
+    {
+      "sample_id": "design-0027",
+      "mesh_seed": 1135501665,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.00630977305706,
+        "young_modulus": 76305870400.31909,
+        "poisson_ratio": 0.26669133587854754,
+        "density": 2866.22941242255,
+        "reinforcement_factor": 1.6260122930326024,
+        "section_scale": 1.2710828158296748,
+        "geometry_scale_x": 0.9761390480013172,
+        "geometry_scale_y": 1.074626252408318,
+        "geometry_scale_z": 0.9187370985948631,
+        "local_morph_factor": 0.05926875713206692,
+        "brace_probability": 0.348545232397778,
+        "load_force": 949.5396577642548
+      }
+    },
+    {
+      "sample_id": "design-0028",
+      "mesh_seed": 615143942,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.134056693683023,
+        "young_modulus": 69437319137.05353,
+        "poisson_ratio": 0.34624014436858985,
+        "density": 2486.7694229240096,
+        "reinforcement_factor": 1.7134574113865764,
+        "section_scale": 0.9797730594661709,
+        "geometry_scale_x": 0.9472581367384925,
+        "geometry_scale_y": 1.0314246310315174,
+        "geometry_scale_z": 0.9060376938518979,
+        "local_morph_factor": 0.00305636697929397,
+        "brace_probability": 0.5315236316462961,
+        "load_force": 819.4020530328474
+      }
+    },
+    {
+      "sample_id": "design-0029",
+      "mesh_seed": 200797140,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9219676730634493,
+        "young_modulus": 59945927966.586105,
+        "poisson_ratio": 0.3430293748913078,
+        "density": 2758.978106994301,
+        "reinforcement_factor": 1.1233260023542049,
+        "section_scale": 1.178565812667609,
+        "geometry_scale_x": 0.9739133380373158,
+        "geometry_scale_y": 1.0197701327632598,
+        "geometry_scale_z": 0.9759869868357676,
+        "local_morph_factor": 0.01662550237211563,
+        "brace_probability": 0.6773559263015242,
+        "load_force": 913.4137065280424
+      }
+    },
+    {
+      "sample_id": "design-0030",
+      "mesh_seed": 932399246,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.3427196124527887,
+        "young_modulus": 74210743780.29817,
+        "poisson_ratio": 0.2718005930046268,
+        "density": 2552.377527482508,
+        "reinforcement_factor": 1.3163016419032845,
+        "section_scale": 0.8169363490908561,
+        "geometry_scale_x": 0.9109462286601445,
+        "geometry_scale_y": 1.0325364137238129,
+        "geometry_scale_z": 0.9632957120537073,
+        "local_morph_factor": 0.026429337123659635,
+        "brace_probability": 0.25237850978795534,
+        "load_force": 1096.0524999851718
+      }
+    },
+    {
+      "sample_id": "design-0031",
+      "mesh_seed": 1784682794,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.1478206222313398,
+        "young_modulus": 86261289698.29994,
+        "poisson_ratio": 0.31893133058623285,
+        "density": 2636.572002774103,
+        "reinforcement_factor": 1.0205183177023707,
+        "section_scale": 1.180556586420916,
+        "geometry_scale_x": 1.0125635141936702,
+        "geometry_scale_y": 0.9164582498819054,
+        "geometry_scale_z": 1.014147437380534,
+        "local_morph_factor": -0.0592613196797654,
+        "brace_probability": 0.5159636255287392,
+        "load_force": 1045.3026726680769
+      }
+    },
+    {
+      "sample_id": "design-0032",
+      "mesh_seed": 459945535,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.2935908861652363,
+        "young_modulus": 59281820644.79938,
+        "poisson_ratio": 0.28310936807134585,
+        "density": 2435.5167880262366,
+        "reinforcement_factor": 1.7451995734225236,
+        "section_scale": 1.240317540450114,
+        "geometry_scale_x": 1.0204272340362621,
+        "geometry_scale_y": 0.9149174848443928,
+        "geometry_scale_z": 0.9167255302914699,
+        "local_morph_factor": 0.05184988902938854,
+        "brace_probability": 0.28749969106009116,
+        "load_force": 858.2674967419075
+      }
+    },
+    {
+      "sample_id": "design-0033",
+      "mesh_seed": 1723696272,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.295229710324457,
+        "young_modulus": 66462167311.98599,
+        "poisson_ratio": 0.2910023430880057,
+        "density": 2820.039633581352,
+        "reinforcement_factor": 1.377865806883975,
+        "section_scale": 1.2061025075631229,
+        "geometry_scale_x": 0.9991878288375352,
+        "geometry_scale_y": 0.9580919232571753,
+        "geometry_scale_z": 0.9389153775231589,
+        "local_morph_factor": 0.03060159023016641,
+        "brace_probability": 0.35365559405990343,
+        "load_force": 1043.5631243506375
+      }
+    },
+    {
+      "sample_id": "design-0034",
+      "mesh_seed": 1686784413,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.1852990359392974,
+        "young_modulus": 53584829217.518196,
+        "poisson_ratio": 0.27075204227297317,
+        "density": 2796.9318343318887,
+        "reinforcement_factor": 1.2647195879981414,
+        "section_scale": 0.8642914359335943,
+        "geometry_scale_x": 1.0790737205903147,
+        "geometry_scale_y": 1.0462952787984752,
+        "geometry_scale_z": 0.9445104304511944,
+        "local_morph_factor": -0.048574763493445645,
+        "brace_probability": 0.7896886006224133,
+        "load_force": 1027.9847802095421
+      }
+    },
+    {
+      "sample_id": "design-0035",
+      "mesh_seed": 1291505640,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.0068726148486984,
+        "young_modulus": 59235134482.47563,
+        "poisson_ratio": 0.26335621061419895,
+        "density": 2650.7477496754404,
+        "reinforcement_factor": 1.5472139910286078,
+        "section_scale": 0.8021500953752427,
+        "geometry_scale_x": 0.9790703611520913,
+        "geometry_scale_y": 0.980765690229841,
+        "geometry_scale_z": 1.0342022620805302,
+        "local_morph_factor": -0.03660456897351236,
+        "brace_probability": 0.8132500141787029,
+        "load_force": 930.0352491335534
+      }
+    },
+    {
+      "sample_id": "design-0036",
+      "mesh_seed": 1996254896,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.1310490492873644,
+        "young_modulus": 85395203884.00879,
+        "poisson_ratio": 0.27588290776758034,
+        "density": 2903.919464559063,
+        "reinforcement_factor": 1.1844058942214748,
+        "section_scale": 0.9997215010001737,
+        "geometry_scale_x": 0.935536624217164,
+        "geometry_scale_y": 0.9968261821188719,
+        "geometry_scale_z": 0.9150388852607219,
+        "local_morph_factor": 0.054821059938060385,
+        "brace_probability": 0.20909762814942998,
+        "load_force": 998.6384577345239
+      }
+    },
+    {
+      "sample_id": "design-0037",
+      "mesh_seed": 1775556618,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.8530059690596323,
+        "young_modulus": 73884073132.85521,
+        "poisson_ratio": 0.30310825299332866,
+        "density": 2854.521938720903,
+        "reinforcement_factor": 1.5588757933888218,
+        "section_scale": 1.2125067339027888,
+        "geometry_scale_x": 1.05865673306789,
+        "geometry_scale_y": 1.0165719890789293,
+        "geometry_scale_z": 0.9699928375520098,
+        "local_morph_factor": -0.04710859762440492,
+        "brace_probability": 0.31467245508302294,
+        "load_force": 1148.4830297953642
+      }
+    },
+    {
+      "sample_id": "design-0038",
+      "mesh_seed": 1799795942,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.1576122679359144,
+        "young_modulus": 62243453720.114,
+        "poisson_ratio": 0.25572570591018584,
+        "density": 2573.9984898501802,
+        "reinforcement_factor": 1.30772046025032,
+        "section_scale": 0.8518400537663503,
+        "geometry_scale_x": 0.9859522586028132,
+        "geometry_scale_y": 1.0595885815717732,
+        "geometry_scale_z": 0.982763977265727,
+        "local_morph_factor": -0.0007519023311606046,
+        "brace_probability": 0.8991410651226488,
+        "load_force": 886.1278108594246
+      }
+    },
+    {
+      "sample_id": "design-0039",
+      "mesh_seed": 572305736,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.195102514302796,
+        "young_modulus": 69828977339.87186,
+        "poisson_ratio": 0.3091419306658792,
+        "density": 2728.0238495549834,
+        "reinforcement_factor": 1.0922153609902583,
+        "section_scale": 1.1580677621577886,
+        "geometry_scale_x": 1.082414726997782,
+        "geometry_scale_y": 1.0853152765729301,
+        "geometry_scale_z": 1.0173337501037152,
+        "local_morph_factor": -0.017698645556585423,
+        "brace_probability": 0.6728572124992721,
+        "load_force": 1177.8468417416886
+      }
+    },
+    {
+      "sample_id": "design-0040",
+      "mesh_seed": 1168047833,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9131820504826391,
+        "young_modulus": 87427462233.63306,
+        "poisson_ratio": 0.3230289091374429,
+        "density": 2923.1022705436644,
+        "reinforcement_factor": 1.13398480653383,
+        "section_scale": 1.2881233513205217,
+        "geometry_scale_x": 1.0507035413826038,
+        "geometry_scale_y": 0.9333034756178414,
+        "geometry_scale_z": 1.0080241624387125,
+        "local_morph_factor": -0.04661598989410914,
+        "brace_probability": 0.7072114588524343,
+        "load_force": 1038.0722557495906
+      }
+    },
+    {
+      "sample_id": "design-0041",
+      "mesh_seed": 2100530763,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.3770843851029866,
+        "young_modulus": 80789167733.07832,
+        "poisson_ratio": 0.2591715354804872,
+        "density": 2857.2834516737503,
+        "reinforcement_factor": 1.433172534248612,
+        "section_scale": 0.8943903234037747,
+        "geometry_scale_x": 0.9694358558066465,
+        "geometry_scale_y": 1.001838816655079,
+        "geometry_scale_z": 1.0717691559539608,
+        "local_morph_factor": 0.04582834420830717,
+        "brace_probability": 0.2714715142794148,
+        "load_force": 976.861782375061
+      }
+    },
+    {
+      "sample_id": "design-0042",
+      "mesh_seed": 1241862169,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.0409454919464336,
+        "young_modulus": 84206475112.00752,
+        "poisson_ratio": 0.3097260116199413,
+        "density": 2533.821531341262,
+        "reinforcement_factor": 1.4022820565630374,
+        "section_scale": 1.0575774203840638,
+        "geometry_scale_x": 1.0788155832426338,
+        "geometry_scale_y": 0.971150454766921,
+        "geometry_scale_z": 0.9469979239906442,
+        "local_morph_factor": 0.02986295642760725,
+        "brace_probability": 0.4937066512369213,
+        "load_force": 993.7402632754199
+      }
+    },
+    {
+      "sample_id": "design-0043",
+      "mesh_seed": 1811465149,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.069858158460748,
+        "young_modulus": 76873958204.42114,
+        "poisson_ratio": 0.34338883285498967,
+        "density": 2829.7768886326103,
+        "reinforcement_factor": 1.7638179004920922,
+        "section_scale": 1.116651502482443,
+        "geometry_scale_x": 1.0174829809703172,
+        "geometry_scale_y": 0.9568452853063196,
+        "geometry_scale_z": 0.9461592167399564,
+        "local_morph_factor": 0.0037802837679623696,
+        "brace_probability": 0.241339423284803,
+        "load_force": 867.3151980137399
+      }
+    },
+    {
+      "sample_id": "design-0044",
+      "mesh_seed": 2097203507,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.0716044980352029,
+        "young_modulus": 51133725573.37447,
+        "poisson_ratio": 0.26631651979101423,
+        "density": 2770.694607513107,
+        "reinforcement_factor": 1.3261233214643415,
+        "section_scale": 1.0944829440716297,
+        "geometry_scale_x": 0.9257403369469399,
+        "geometry_scale_y": 1.0724971334716893,
+        "geometry_scale_z": 0.951787033500799,
+        "local_morph_factor": -0.015071488652582593,
+        "brace_probability": 0.5145590155290156,
+        "load_force": 1037.1317024264188
+      }
+    },
+    {
+      "sample_id": "design-0045",
+      "mesh_seed": 1521211321,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.8837716717354995,
+        "young_modulus": 56495407847.5668,
+        "poisson_ratio": 0.26453366244243826,
+        "density": 2864.839829209747,
+        "reinforcement_factor": 1.3059645596245426,
+        "section_scale": 1.2634833536423073,
+        "geometry_scale_x": 0.913311866413013,
+        "geometry_scale_y": 1.0063112852996625,
+        "geometry_scale_z": 1.051447272960485,
+        "local_morph_factor": 0.0008502522254930645,
+        "brace_probability": 0.4846192519631168,
+        "load_force": 1124.606351185816
+      }
+    },
+    {
+      "sample_id": "design-0046",
+      "mesh_seed": 2105647745,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.1626146210758783,
+        "young_modulus": 59544110866.461296,
+        "poisson_ratio": 0.30984557285856507,
+        "density": 2780.6875342806616,
+        "reinforcement_factor": 1.7257046792985147,
+        "section_scale": 0.8466278083547697,
+        "geometry_scale_x": 1.0611440793429299,
+        "geometry_scale_y": 1.0366979476228515,
+        "geometry_scale_z": 1.0721218827553274,
+        "local_morph_factor": 0.013063032606138544,
+        "brace_probability": 0.5176408599828523,
+        "load_force": 1118.530558769071
+      }
+    },
+    {
+      "sample_id": "design-0047",
+      "mesh_seed": 1093292296,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.8221672815003385,
+        "young_modulus": 79998603008.81226,
+        "poisson_ratio": 0.33123738744004977,
+        "density": 2897.2075178904634,
+        "reinforcement_factor": 1.3581511766318624,
+        "section_scale": 1.1663369501716685,
+        "geometry_scale_x": 1.0427285273269222,
+        "geometry_scale_y": 0.9577098472127554,
+        "geometry_scale_z": 1.0531078066057484,
+        "local_morph_factor": 0.055702910332270886,
+        "brace_probability": 0.4464729848208211,
+        "load_force": 909.3782032515913
+      }
+    },
+    {
+      "sample_id": "design-0048",
+      "mesh_seed": 610281512,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.1511240748591283,
+        "young_modulus": 74331664257.49033,
+        "poisson_ratio": 0.3470048105128477,
+        "density": 2953.568337915268,
+        "reinforcement_factor": 1.5685758306664361,
+        "section_scale": 1.153446929833887,
+        "geometry_scale_x": 0.9356107448506132,
+        "geometry_scale_y": 0.9682098882016127,
+        "geometry_scale_z": 1.0620291459388436,
+        "local_morph_factor": -0.011945238504296497,
+        "brace_probability": 0.35963968660547846,
+        "load_force": 825.2493143790291
+      }
+    },
+    {
+      "sample_id": "design-0049",
+      "mesh_seed": 1253826356,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.0308452094977025,
+        "young_modulus": 86965474731.09253,
+        "poisson_ratio": 0.2891521289178611,
+        "density": 2873.721160504756,
+        "reinforcement_factor": 1.1030363175083182,
+        "section_scale": 1.2113681606339857,
+        "geometry_scale_x": 1.0855066032833431,
+        "geometry_scale_y": 1.00051212136083,
+        "geometry_scale_z": 0.9909550082322912,
+        "local_morph_factor": 0.0489731440186434,
+        "brace_probability": 0.35947349082381186,
+        "load_force": 1168.2509508849662
+      }
+    },
+    {
+      "sample_id": "design-0050",
+      "mesh_seed": 478988674,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.183018293606021,
+        "young_modulus": 85645090780.74533,
+        "poisson_ratio": 0.3025734632902336,
+        "density": 2809.060460252793,
+        "reinforcement_factor": 1.426397192413464,
+        "section_scale": 0.9508734834009691,
+        "geometry_scale_x": 1.0981279202819592,
+        "geometry_scale_y": 0.9049942109194414,
+        "geometry_scale_z": 0.9503055654756742,
+        "local_morph_factor": 0.05143744640535387,
+        "brace_probability": 0.8666159847779749,
+        "load_force": 911.5261280279567
+      }
+    },
+    {
+      "sample_id": "design-0051",
+      "mesh_seed": 1970316709,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.1250575830838507,
+        "young_modulus": 81074342312.29749,
+        "poisson_ratio": 0.30718454658466615,
+        "density": 2636.563387058332,
+        "reinforcement_factor": 1.0073927369482292,
+        "section_scale": 0.9827902717586121,
+        "geometry_scale_x": 0.9749567299457197,
+        "geometry_scale_y": 0.9162975693919396,
+        "geometry_scale_z": 0.9169008445921516,
+        "local_morph_factor": -0.02839576080378972,
+        "brace_probability": 0.5460471267481977,
+        "load_force": 1109.6478038234648
+      }
+    },
+    {
+      "sample_id": "design-0052",
+      "mesh_seed": 2147018301,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.016385007790348,
+        "young_modulus": 81863885799.19824,
+        "poisson_ratio": 0.3348001248542207,
+        "density": 2663.9063502223808,
+        "reinforcement_factor": 1.4857333616702095,
+        "section_scale": 1.2606367180131697,
+        "geometry_scale_x": 0.9159620777268866,
+        "geometry_scale_y": 1.0217813125563167,
+        "geometry_scale_z": 1.05530251634354,
+        "local_morph_factor": -0.008719986854746724,
+        "brace_probability": 0.7249590698632302,
+        "load_force": 1136.0147281075583
+      }
+    },
+    {
+      "sample_id": "design-0053",
+      "mesh_seed": 1264608172,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.0147227694936776,
+        "young_modulus": 78974804570.44409,
+        "poisson_ratio": 0.3209335880337018,
+        "density": 2630.019630159802,
+        "reinforcement_factor": 1.0170135110402945,
+        "section_scale": 1.2748582915535982,
+        "geometry_scale_x": 0.9935390319600663,
+        "geometry_scale_y": 0.9597013949736501,
+        "geometry_scale_z": 0.9501063485248246,
+        "local_morph_factor": -0.012060787308175468,
+        "brace_probability": 0.6045162056342942,
+        "load_force": 1007.1026094247055
+      }
+    },
+    {
+      "sample_id": "design-0054",
+      "mesh_seed": 1641416168,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.261665399244767,
+        "young_modulus": 89230300848.9727,
+        "poisson_ratio": 0.25157119175654175,
+        "density": 2951.8598019908704,
+        "reinforcement_factor": 1.0254291455188334,
+        "section_scale": 1.0527134622333842,
+        "geometry_scale_x": 1.0570935570609705,
+        "geometry_scale_y": 1.0327151156044478,
+        "geometry_scale_z": 1.0411484762472032,
+        "local_morph_factor": -0.04830093368600942,
+        "brace_probability": 0.8048364581336998,
+        "load_force": 1059.930431148644
+      }
+    },
+    {
+      "sample_id": "design-0055",
+      "mesh_seed": 820756698,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.1980995059346218,
+        "young_modulus": 80185661214.90717,
+        "poisson_ratio": 0.3305153938418166,
+        "density": 2976.618305771124,
+        "reinforcement_factor": 1.5754580938089675,
+        "section_scale": 1.1058498654377253,
+        "geometry_scale_x": 1.0053911164987486,
+        "geometry_scale_y": 1.004566479415495,
+        "geometry_scale_z": 1.0279905835665022,
+        "local_morph_factor": 0.014961440098283305,
+        "brace_probability": 0.20099008422821008,
+        "load_force": 859.7024926243973
+      }
+    },
+    {
+      "sample_id": "design-0056",
+      "mesh_seed": 2022402139,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9150368980224837,
+        "young_modulus": 76980697754.357,
+        "poisson_ratio": 0.3490665364636781,
+        "density": 2559.5035965098104,
+        "reinforcement_factor": 1.648556022748262,
+        "section_scale": 0.9856818668672025,
+        "geometry_scale_x": 1.044758858869425,
+        "geometry_scale_y": 0.9177481634144486,
+        "geometry_scale_z": 1.024786608693428,
+        "local_morph_factor": 0.0024687288320845158,
+        "brace_probability": 0.7803557538133115,
+        "load_force": 847.4256682191051
+      }
+    },
+    {
+      "sample_id": "design-0057",
+      "mesh_seed": 894989762,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.1453460097701547,
+        "young_modulus": 77790008876.14752,
+        "poisson_ratio": 0.26607519456646483,
+        "density": 2912.0171154961376,
+        "reinforcement_factor": 1.184791681908611,
+        "section_scale": 0.8368500505134527,
+        "geometry_scale_x": 0.9169764245838122,
+        "geometry_scale_y": 1.0568503482635143,
+        "geometry_scale_z": 1.0680724423127066,
+        "local_morph_factor": 0.04567650854758863,
+        "brace_probability": 0.7280733469760865,
+        "load_force": 1157.6113999005702
+      }
+    },
+    {
+      "sample_id": "design-0058",
+      "mesh_seed": 1120424516,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.3305744423052315,
+        "young_modulus": 75290360969.38069,
+        "poisson_ratio": 0.3453437692149841,
+        "density": 2708.5189525414244,
+        "reinforcement_factor": 1.1925965560737661,
+        "section_scale": 1.2693090726456644,
+        "geometry_scale_x": 0.910135310540084,
+        "geometry_scale_y": 1.0166692866109277,
+        "geometry_scale_z": 1.0858912563948877,
+        "local_morph_factor": 0.029323493722948527,
+        "brace_probability": 0.6238371485908296,
+        "load_force": 994.5748504790968
+      }
+    },
+    {
+      "sample_id": "design-0059",
+      "mesh_seed": 1992009812,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.025334225078258,
+        "young_modulus": 79543383604.50052,
+        "poisson_ratio": 0.3061213722914388,
+        "density": 2859.835194346732,
+        "reinforcement_factor": 1.773692414627344,
+        "section_scale": 1.1197090660155338,
+        "geometry_scale_x": 1.0415756185974785,
+        "geometry_scale_y": 1.0698569174562944,
+        "geometry_scale_z": 1.010633646134649,
+        "local_morph_factor": -0.02539802782676344,
+        "brace_probability": 0.7554459875775184,
+        "load_force": 1129.932540952234
+      }
+    },
+    {
+      "sample_id": "design-0060",
+      "mesh_seed": 585340797,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.8084769943868922,
+        "young_modulus": 70281239667.56009,
+        "poisson_ratio": 0.25612404925094634,
+        "density": 2697.771315322698,
+        "reinforcement_factor": 1.3819618512587792,
+        "section_scale": 0.9098848118636433,
+        "geometry_scale_x": 1.0998361593463655,
+        "geometry_scale_y": 1.0485670940185097,
+        "geometry_scale_z": 0.9772163984394466,
+        "local_morph_factor": 0.035383991633260656,
+        "brace_probability": 0.3727705010020523,
+        "load_force": 913.8197179759003
+      }
+    },
+    {
+      "sample_id": "design-0061",
+      "mesh_seed": 2104261008,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.07807314480551,
+        "young_modulus": 81392612154.29326,
+        "poisson_ratio": 0.2889336865594085,
+        "density": 2510.880543279654,
+        "reinforcement_factor": 1.347616710275536,
+        "section_scale": 1.170341257867785,
+        "geometry_scale_x": 1.069265841878825,
+        "geometry_scale_y": 1.0804470693653596,
+        "geometry_scale_z": 1.0985342495101609,
+        "local_morph_factor": -0.022411224291338787,
+        "brace_probability": 0.786635006386184,
+        "load_force": 1199.4008085858795
+      }
+    },
+    {
+      "sample_id": "design-0062",
+      "mesh_seed": 1667281244,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.8020242921446334,
+        "young_modulus": 55699265146.592064,
+        "poisson_ratio": 0.32776823488067414,
+        "density": 2882.324031828788,
+        "reinforcement_factor": 1.20780143312457,
+        "section_scale": 1.2701079430386761,
+        "geometry_scale_x": 0.9472920767157434,
+        "geometry_scale_y": 1.045712097506773,
+        "geometry_scale_z": 0.9368974047555017,
+        "local_morph_factor": 0.030868840523494465,
+        "brace_probability": 0.23557333785763435,
+        "load_force": 1036.0665242393047
+      }
+    },
+    {
+      "sample_id": "design-0063",
+      "mesh_seed": 600462024,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.0636405540216,
+        "young_modulus": 85471734785.94461,
+        "poisson_ratio": 0.28221285700990417,
+        "density": 2970.6421081533945,
+        "reinforcement_factor": 1.361496188366842,
+        "section_scale": 0.9999447572731879,
+        "geometry_scale_x": 0.9409051935555369,
+        "geometry_scale_y": 0.9111301475390329,
+        "geometry_scale_z": 0.9122172490620486,
+        "local_morph_factor": 0.042017402541574364,
+        "brace_probability": 0.20511708234287235,
+        "load_force": 1059.32017322274
+      }
+    },
+    {
+      "sample_id": "design-0064",
+      "mesh_seed": 749411421,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.3380852912350785,
+        "young_modulus": 68394832953.43376,
+        "poisson_ratio": 0.2563933235831373,
+        "density": 2515.4522357631554,
+        "reinforcement_factor": 1.555664699729828,
+        "section_scale": 1.2454941196785616,
+        "geometry_scale_x": 0.996440172349657,
+        "geometry_scale_y": 0.9780822929196719,
+        "geometry_scale_z": 1.06668351397926,
+        "local_morph_factor": -0.055178644184662236,
+        "brace_probability": 0.6190030842110388,
+        "load_force": 1188.4920433581829
+      }
+    },
+    {
+      "sample_id": "design-0065",
+      "mesh_seed": 1309173960,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9207404130008272,
+        "young_modulus": 64897203082.14055,
+        "poisson_ratio": 0.30745738627700203,
+        "density": 2929.050868578842,
+        "reinforcement_factor": 1.5834021229586388,
+        "section_scale": 0.9712322113358558,
+        "geometry_scale_x": 0.9765180885216788,
+        "geometry_scale_y": 1.027005457466708,
+        "geometry_scale_z": 1.0256121671734089,
+        "local_morph_factor": -0.04633330005272582,
+        "brace_probability": 0.6038364703962449,
+        "load_force": 1098.80563013897
+      }
+    },
+    {
+      "sample_id": "design-0066",
+      "mesh_seed": 923502513,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.3663814655149247,
+        "young_modulus": 55943228303.357605,
+        "poisson_ratio": 0.25864770991746266,
+        "density": 2734.3247128089297,
+        "reinforcement_factor": 1.6247886469889399,
+        "section_scale": 1.1081869757512846,
+        "geometry_scale_x": 1.0213446573097684,
+        "geometry_scale_y": 0.9184563317225517,
+        "geometry_scale_z": 1.0158125722320446,
+        "local_morph_factor": 0.0017858728161828999,
+        "brace_probability": 0.21001469707432377,
+        "load_force": 1106.3814815697942
+      }
+    },
+    {
+      "sample_id": "design-0067",
+      "mesh_seed": 273182886,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9854268066828723,
+        "young_modulus": 68280719091.53877,
+        "poisson_ratio": 0.3180289401010962,
+        "density": 2917.283352659587,
+        "reinforcement_factor": 1.6240200756496264,
+        "section_scale": 0.9060393239399049,
+        "geometry_scale_x": 0.945750449778856,
+        "geometry_scale_y": 0.985701213138436,
+        "geometry_scale_z": 0.9730835047930151,
+        "local_morph_factor": 0.02626144397462289,
+        "brace_probability": 0.5834834443657118,
+        "load_force": 980.1727795502691
+      }
+    },
+    {
+      "sample_id": "design-0068",
+      "mesh_seed": 471646276,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9523910190030214,
+        "young_modulus": 84324523270.56693,
+        "poisson_ratio": 0.3247609324960752,
+        "density": 2877.6083819817954,
+        "reinforcement_factor": 1.7930834082493132,
+        "section_scale": 1.1435538935715117,
+        "geometry_scale_x": 1.0304130648875687,
+        "geometry_scale_y": 1.0532524282345674,
+        "geometry_scale_z": 1.0265450806384717,
+        "local_morph_factor": 0.054605374725236674,
+        "brace_probability": 0.4846323848687684,
+        "load_force": 947.710553605581
+      }
+    },
+    {
+      "sample_id": "design-0069",
+      "mesh_seed": 1297946894,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.3914310578056606,
+        "young_modulus": 53276422977.5745,
+        "poisson_ratio": 0.3410196129994927,
+        "density": 2612.7684205416767,
+        "reinforcement_factor": 1.7931101898380502,
+        "section_scale": 0.865675878131094,
+        "geometry_scale_x": 0.9483699598662361,
+        "geometry_scale_y": 1.0581106005998215,
+        "geometry_scale_z": 0.9778341305240914,
+        "local_morph_factor": -0.007085225276350478,
+        "brace_probability": 0.3406998621355326,
+        "load_force": 862.5144998320375
+      }
+    },
+    {
+      "sample_id": "design-0070",
+      "mesh_seed": 184126229,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.3387694565997261,
+        "young_modulus": 81448760877.26372,
+        "poisson_ratio": 0.28665832090380383,
+        "density": 2692.01273649024,
+        "reinforcement_factor": 1.7326547973711186,
+        "section_scale": 1.2526218202624118,
+        "geometry_scale_x": 1.0191154944269112,
+        "geometry_scale_y": 1.0362828287823944,
+        "geometry_scale_z": 0.9149639026843461,
+        "local_morph_factor": -0.01871499257208053,
+        "brace_probability": 0.5971182558104796,
+        "load_force": 976.7860055995286
+      }
+    },
+    {
+      "sample_id": "design-0071",
+      "mesh_seed": 1843949459,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.0811267811496577,
+        "young_modulus": 59427100487.92212,
+        "poisson_ratio": 0.34100988944392857,
+        "density": 2524.253108455128,
+        "reinforcement_factor": 1.5743251898363746,
+        "section_scale": 1.04716398639081,
+        "geometry_scale_x": 1.046601539766291,
+        "geometry_scale_y": 0.9811127579566891,
+        "geometry_scale_z": 0.9707468791242049,
+        "local_morph_factor": 0.017325132344909525,
+        "brace_probability": 0.8742382335684467,
+        "load_force": 1075.4045671154133
+      }
+    },
+    {
+      "sample_id": "design-0072",
+      "mesh_seed": 660236642,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.8123655227930044,
+        "young_modulus": 58532299008.27389,
+        "poisson_ratio": 0.28532580582142214,
+        "density": 2495.6844483629034,
+        "reinforcement_factor": 1.7627966662864536,
+        "section_scale": 0.932889435672502,
+        "geometry_scale_x": 0.9917308981577369,
+        "geometry_scale_y": 0.9281381246430271,
+        "geometry_scale_z": 0.9610180664327062,
+        "local_morph_factor": 0.005497595284219517,
+        "brace_probability": 0.49299076578633755,
+        "load_force": 835.5454460585811
+      }
+    },
+    {
+      "sample_id": "design-0073",
+      "mesh_seed": 34582876,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.3954389229456095,
+        "young_modulus": 59421594766.13739,
+        "poisson_ratio": 0.27215765494326233,
+        "density": 2853.129596603646,
+        "reinforcement_factor": 1.363364044376102,
+        "section_scale": 0.8201853535720405,
+        "geometry_scale_x": 0.9096279662456012,
+        "geometry_scale_y": 1.096275449573774,
+        "geometry_scale_z": 1.0446688514852112,
+        "local_morph_factor": 0.0018377930609554602,
+        "brace_probability": 0.3107160424100661,
+        "load_force": 1164.1373191684143
+      }
+    },
+    {
+      "sample_id": "design-0074",
+      "mesh_seed": 1605943048,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9312521841543475,
+        "young_modulus": 81602345403.52573,
+        "poisson_ratio": 0.33181714338565055,
+        "density": 2411.5535206870504,
+        "reinforcement_factor": 1.440164503304655,
+        "section_scale": 0.9755129106607046,
+        "geometry_scale_x": 1.0940563843391735,
+        "geometry_scale_y": 0.9629095648761011,
+        "geometry_scale_z": 0.9601320645297695,
+        "local_morph_factor": 0.019006382081909495,
+        "brace_probability": 0.8326181956829857,
+        "load_force": 1056.819406998368
+      }
+    },
+    {
+      "sample_id": "design-0075",
+      "mesh_seed": 805673619,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.8483141395136564,
+        "young_modulus": 60283314520.60663,
+        "poisson_ratio": 0.3298831238390728,
+        "density": 2481.6628647596335,
+        "reinforcement_factor": 1.7521859425937454,
+        "section_scale": 1.2736721745431228,
+        "geometry_scale_x": 1.02781065554585,
+        "geometry_scale_y": 0.9604438184531204,
+        "geometry_scale_z": 1.084820892205612,
+        "local_morph_factor": 0.03571168742643539,
+        "brace_probability": 0.7158926922705122,
+        "load_force": 856.6602831662747
+      }
+    },
+    {
+      "sample_id": "design-0076",
+      "mesh_seed": 1202214161,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.3726026147305612,
+        "young_modulus": 59272502759.485214,
+        "poisson_ratio": 0.27585143846639654,
+        "density": 2668.512132442448,
+        "reinforcement_factor": 1.6428053258931872,
+        "section_scale": 0.8482432244171914,
+        "geometry_scale_x": 1.040449648288964,
+        "geometry_scale_y": 1.0153239136161296,
+        "geometry_scale_z": 1.0418622947057457,
+        "local_morph_factor": -0.04149688931891968,
+        "brace_probability": 0.87565195990519,
+        "load_force": 862.1862505268798
+      }
+    },
+    {
+      "sample_id": "design-0077",
+      "mesh_seed": 1310962784,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.8036692672857821,
+        "young_modulus": 78780019801.6637,
+        "poisson_ratio": 0.28046567652859217,
+        "density": 2627.057176943017,
+        "reinforcement_factor": 1.7037404579607223,
+        "section_scale": 0.9967463749707328,
+        "geometry_scale_x": 1.0067876994356908,
+        "geometry_scale_y": 1.0232603193444971,
+        "geometry_scale_z": 0.9023185869050948,
+        "local_morph_factor": 0.022973219873798786,
+        "brace_probability": 0.8641563310203848,
+        "load_force": 960.6799643980769
+      }
+    },
+    {
+      "sample_id": "design-0078",
+      "mesh_seed": 1770291675,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.8916995736880519,
+        "young_modulus": 71841108831.35097,
+        "poisson_ratio": 0.27451593567542126,
+        "density": 2524.682943044874,
+        "reinforcement_factor": 1.5094312761552073,
+        "section_scale": 0.8142803127196789,
+        "geometry_scale_x": 1.097958659643722,
+        "geometry_scale_y": 1.0402253482837802,
+        "geometry_scale_z": 0.9538140279426809,
+        "local_morph_factor": 0.012537075979309545,
+        "brace_probability": 0.23849574626149783,
+        "load_force": 1065.9243965742678
+      }
+    },
+    {
+      "sample_id": "design-0079",
+      "mesh_seed": 1808994661,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.123128856788028,
+        "young_modulus": 55160157968.62556,
+        "poisson_ratio": 0.26479295726827745,
+        "density": 2794.9270886061763,
+        "reinforcement_factor": 1.2280588955326464,
+        "section_scale": 1.2648753620259758,
+        "geometry_scale_x": 1.0141907725496848,
+        "geometry_scale_y": 1.0126839895788018,
+        "geometry_scale_z": 1.0518954587978142,
+        "local_morph_factor": 0.04593042735550418,
+        "brace_probability": 0.5233328088723543,
+        "load_force": 1024.7555984098271
+      }
+    },
+    {
+      "sample_id": "design-0080",
+      "mesh_seed": 1811102353,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.1697811912599114,
+        "young_modulus": 85776739792.31332,
+        "poisson_ratio": 0.2554789533968003,
+        "density": 2610.894668715934,
+        "reinforcement_factor": 1.7143227793719742,
+        "section_scale": 1.0933199196457135,
+        "geometry_scale_x": 0.9639288874019781,
+        "geometry_scale_y": 0.970639927757809,
+        "geometry_scale_z": 1.0329413379316463,
+        "local_morph_factor": 0.022711959263007897,
+        "brace_probability": 0.3035521189851536,
+        "load_force": 978.8006963315829
+      }
+    },
+    {
+      "sample_id": "design-0081",
+      "mesh_seed": 166680532,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.1334613592784444,
+        "young_modulus": 77954700795.82764,
+        "poisson_ratio": 0.3308410097305159,
+        "density": 2812.0034890260795,
+        "reinforcement_factor": 1.6690807159112984,
+        "section_scale": 0.9777939444681961,
+        "geometry_scale_x": 0.9142109820416278,
+        "geometry_scale_y": 0.9190178065143618,
+        "geometry_scale_z": 1.0187162552325932,
+        "local_morph_factor": -0.05849559079151869,
+        "brace_probability": 0.7887183008456029,
+        "load_force": 875.9216266827993
+      }
+    },
+    {
+      "sample_id": "design-0082",
+      "mesh_seed": 1792632536,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9422979669477929,
+        "young_modulus": 54263970701.097,
+        "poisson_ratio": 0.2869793602498109,
+        "density": 2405.4557777250798,
+        "reinforcement_factor": 1.160688156028985,
+        "section_scale": 0.8731517722605786,
+        "geometry_scale_x": 1.0951320355030802,
+        "geometry_scale_y": 0.9866338051663859,
+        "geometry_scale_z": 1.009768517666619,
+        "local_morph_factor": -0.053276734449956814,
+        "brace_probability": 0.2413748376094073,
+        "load_force": 1040.5797268013669
+      }
+    },
+    {
+      "sample_id": "design-0083",
+      "mesh_seed": 1754175217,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.918711360684468,
+        "young_modulus": 56530361693.5804,
+        "poisson_ratio": 0.32582404608997706,
+        "density": 2965.2508463538156,
+        "reinforcement_factor": 1.295093948260772,
+        "section_scale": 0.9881116633032502,
+        "geometry_scale_x": 0.9584420100881461,
+        "geometry_scale_y": 0.9349932447437466,
+        "geometry_scale_z": 0.9628971503795805,
+        "local_morph_factor": 0.038600629979721524,
+        "brace_probability": 0.25836085410437665,
+        "load_force": 1127.8791127443237
+      }
+    },
+    {
+      "sample_id": "design-0084",
+      "mesh_seed": 725533199,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.3306594971163717,
+        "young_modulus": 80660805953.94664,
+        "poisson_ratio": 0.2839315813534637,
+        "density": 2925.7547969910192,
+        "reinforcement_factor": 1.609910136450778,
+        "section_scale": 1.1205492396786665,
+        "geometry_scale_x": 0.971925949195873,
+        "geometry_scale_y": 0.9272473889988053,
+        "geometry_scale_z": 1.0190391672056263,
+        "local_morph_factor": -0.035503284603679304,
+        "brace_probability": 0.8154618297351164,
+        "load_force": 1151.6729172105397
+      }
+    },
+    {
+      "sample_id": "design-0085",
+      "mesh_seed": 118201956,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.075963417905699,
+        "young_modulus": 79079082975.72815,
+        "poisson_ratio": 0.2843125207103048,
+        "density": 2492.1389980724925,
+        "reinforcement_factor": 1.3429968688134146,
+        "section_scale": 1.0516972126942234,
+        "geometry_scale_x": 1.0386433803897646,
+        "geometry_scale_y": 1.036843082026491,
+        "geometry_scale_z": 0.9110861594353115,
+        "local_morph_factor": 0.050638517461527296,
+        "brace_probability": 0.34358510057799174,
+        "load_force": 893.4690263910592
+      }
+    },
+    {
+      "sample_id": "design-0086",
+      "mesh_seed": 1063027191,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.3244098768025685,
+        "young_modulus": 86974472054.90692,
+        "poisson_ratio": 0.31626537420388173,
+        "density": 2694.8097678122526,
+        "reinforcement_factor": 1.687424975022671,
+        "section_scale": 1.2747821495431184,
+        "geometry_scale_x": 1.0122233100638305,
+        "geometry_scale_y": 1.0585986920466144,
+        "geometry_scale_z": 1.0965568126001703,
+        "local_morph_factor": -0.056470651291770875,
+        "brace_probability": 0.6095597731416738,
+        "load_force": 1075.3907508809043
+      }
+    },
+    {
+      "sample_id": "design-0087",
+      "mesh_seed": 191339629,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9214467725811012,
+        "young_modulus": 60687387646.60719,
+        "poisson_ratio": 0.338512655545009,
+        "density": 2928.4433807149826,
+        "reinforcement_factor": 1.1101135965392173,
+        "section_scale": 1.1721577634461577,
+        "geometry_scale_x": 1.0398193377717735,
+        "geometry_scale_y": 0.9923843206893487,
+        "geometry_scale_z": 0.9795017644004921,
+        "local_morph_factor": -0.021112058456467457,
+        "brace_probability": 0.7021703194605158,
+        "load_force": 980.9893484962876
+      }
+    },
+    {
+      "sample_id": "design-0088",
+      "mesh_seed": 1169223016,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.0795788693405401,
+        "young_modulus": 89247817232.84848,
+        "poisson_ratio": 0.3183541574470258,
+        "density": 2447.3259502596693,
+        "reinforcement_factor": 1.1773371500557999,
+        "section_scale": 1.0943580315628245,
+        "geometry_scale_x": 0.9049768955440195,
+        "geometry_scale_y": 0.9906963073490056,
+        "geometry_scale_z": 0.9612082983164575,
+        "local_morph_factor": -0.0385277161650138,
+        "brace_probability": 0.2319302532354727,
+        "load_force": 806.7236631265125
+      }
+    },
+    {
+      "sample_id": "design-0089",
+      "mesh_seed": 1455462226,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.1753788035997537,
+        "young_modulus": 63094774260.9618,
+        "poisson_ratio": 0.3437358846627783,
+        "density": 2458.921798773751,
+        "reinforcement_factor": 1.483212422217885,
+        "section_scale": 1.064495770168823,
+        "geometry_scale_x": 1.0269575402412565,
+        "geometry_scale_y": 1.0694961432072478,
+        "geometry_scale_z": 0.977977951929288,
+        "local_morph_factor": 0.019839388319966803,
+        "brace_probability": 0.34791244222013495,
+        "load_force": 1114.3141699297985
+      }
+    },
+    {
+      "sample_id": "design-0090",
+      "mesh_seed": 364845688,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.2620562160722673,
+        "young_modulus": 61719548390.68773,
+        "poisson_ratio": 0.2634821411882287,
+        "density": 2847.122559221121,
+        "reinforcement_factor": 1.3230460165310927,
+        "section_scale": 1.0616744295395908,
+        "geometry_scale_x": 1.0218980145641807,
+        "geometry_scale_y": 0.9745562000804603,
+        "geometry_scale_z": 1.0971915950434752,
+        "local_morph_factor": 0.030356648903969496,
+        "brace_probability": 0.6539479011138827,
+        "load_force": 860.8192274710798
+      }
+    },
+    {
+      "sample_id": "design-0091",
+      "mesh_seed": 1147747730,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9516619794404542,
+        "young_modulus": 78149709327.23698,
+        "poisson_ratio": 0.25813701115957294,
+        "density": 2483.9761888545095,
+        "reinforcement_factor": 1.635290366441345,
+        "section_scale": 0.99117971355163,
+        "geometry_scale_x": 0.9598823355850243,
+        "geometry_scale_y": 0.9210101226562081,
+        "geometry_scale_z": 0.9169206127906819,
+        "local_morph_factor": -0.009723100440355605,
+        "brace_probability": 0.5219823422860597,
+        "load_force": 1187.964699382389
+      }
+    },
+    {
+      "sample_id": "design-0092",
+      "mesh_seed": 796689152,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.8888162844792369,
+        "young_modulus": 77330010030.60614,
+        "poisson_ratio": 0.25127898761876016,
+        "density": 2846.7355184562516,
+        "reinforcement_factor": 1.2501613370603153,
+        "section_scale": 1.1397245699101601,
+        "geometry_scale_x": 1.0910744703291133,
+        "geometry_scale_y": 1.097817115929004,
+        "geometry_scale_z": 1.0110050110767677,
+        "local_morph_factor": -0.051621398685928334,
+        "brace_probability": 0.24323915114650352,
+        "load_force": 908.5022163303291
+      }
+    },
+    {
+      "sample_id": "design-0093",
+      "mesh_seed": 1426830008,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9151442494000012,
+        "young_modulus": 85424047922.157,
+        "poisson_ratio": 0.28074378216033274,
+        "density": 2597.6351841189703,
+        "reinforcement_factor": 1.6648195992375168,
+        "section_scale": 1.18046919960265,
+        "geometry_scale_x": 0.9645283107464173,
+        "geometry_scale_y": 1.0004741997570574,
+        "geometry_scale_z": 1.012022000597335,
+        "local_morph_factor": 0.026746244609324732,
+        "brace_probability": 0.29376226286539675,
+        "load_force": 1101.3908384710599
+      }
+    },
+    {
+      "sample_id": "design-0094",
+      "mesh_seed": 202389787,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.0348442313392343,
+        "young_modulus": 87808216584.28253,
+        "poisson_ratio": 0.2671445789377519,
+        "density": 2864.7386435772933,
+        "reinforcement_factor": 1.3131128373848617,
+        "section_scale": 0.9165059362025882,
+        "geometry_scale_x": 1.002737749068263,
+        "geometry_scale_y": 0.9381106034928385,
+        "geometry_scale_z": 0.9890414853955192,
+        "local_morph_factor": 0.010313159324262341,
+        "brace_probability": 0.7395519731215214,
+        "load_force": 1125.5890880851716
+      }
+    },
+    {
+      "sample_id": "design-0095",
+      "mesh_seed": 208473040,
+      "mode": "mesh",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9944503103526184,
+        "young_modulus": 86579214551.95056,
+        "poisson_ratio": 0.3396146325137442,
+        "density": 2693.223497532048,
+        "reinforcement_factor": 1.0876193374432659,
+        "section_scale": 0.9823310768490472,
+        "geometry_scale_x": 1.049161661393926,
+        "geometry_scale_y": 1.0120831263359937,
+        "geometry_scale_z": 0.9374513786975835,
+        "local_morph_factor": 0.04333870425575019,
+        "brace_probability": 0.6521402345823074,
+        "load_force": 851.388583551209
+      }
+    },
+    {
+      "sample_id": "design-0096",
+      "mesh_seed": 1907789939,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.0058538203945873,
+        "young_modulus": 64301706400.205536,
+        "poisson_ratio": 0.3023665362712431,
+        "density": 2724.1295090381122,
+        "reinforcement_factor": 1.782443892312792,
+        "section_scale": 1.1422894154819092,
+        "geometry_scale_x": 0.9547334952941888,
+        "geometry_scale_y": 0.9834095166599116,
+        "geometry_scale_z": 0.9223769113690728,
+        "local_morph_factor": -0.017407020713634938,
+        "brace_probability": 0.7651602377097508,
+        "load_force": 961.7074505529708
+      }
+    },
+    {
+      "sample_id": "design-0097",
+      "mesh_seed": 1761169619,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 0.9259629345812954,
+        "young_modulus": 74920298557.56659,
+        "poisson_ratio": 0.2573523337955448,
+        "density": 2480.1655577999345,
+        "reinforcement_factor": 1.3270433130544816,
+        "section_scale": 1.2583836378709214,
+        "geometry_scale_x": 1.0423976709863134,
+        "geometry_scale_y": 0.9440715368452902,
+        "geometry_scale_z": 0.9595054712729317,
+        "local_morph_factor": -0.05461760081185964,
+        "brace_probability": 0.6489807856389429,
+        "load_force": 1178.8930099584297
+      }
+    },
+    {
+      "sample_id": "design-0098",
+      "mesh_seed": 1738641965,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.1021818519010111,
+        "young_modulus": 65190810942.15213,
+        "poisson_ratio": 0.3280061757102364,
+        "density": 2693.7978964487206,
+        "reinforcement_factor": 1.5682076801319265,
+        "section_scale": 0.9293396447979527,
+        "geometry_scale_x": 1.0409442334099315,
+        "geometry_scale_y": 0.9467455683449975,
+        "geometry_scale_z": 0.9671587344755085,
+        "local_morph_factor": -0.025866478378770014,
+        "brace_probability": 0.5065461827209925,
+        "load_force": 886.187183608169
+      }
+    },
+    {
+      "sample_id": "design-0099",
+      "mesh_seed": 1379235233,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.0582491896671617,
+        "young_modulus": 59109564725.113556,
+        "poisson_ratio": 0.32717189411613834,
+        "density": 2798.4626951487635,
+        "reinforcement_factor": 1.766589056665041,
+        "section_scale": 1.232804010029874,
+        "geometry_scale_x": 1.0893315814239433,
+        "geometry_scale_y": 1.0843810488909444,
+        "geometry_scale_z": 1.0812232650315265,
+        "local_morph_factor": 0.058047286672580634,
+        "brace_probability": 0.8687778504894512,
+        "load_force": 942.6199666705131
+      }
+    },
+    {
+      "sample_id": "design-0100",
+      "mesh_seed": 1297364993,
+      "mode": "frame",
+      "grid_shape": [
+        8,
+        4,
+        4
+      ],
+      "parameters": {
+        "thickness": 1.1720906346731301,
+        "young_modulus": 62509559594.626854,
+        "poisson_ratio": 0.3365477914499863,
+        "density": 2997.3335576301142,
+        "reinforcement_factor": 1.496955370004619,
+        "section_scale": 0.9432455383288438,
+        "geometry_scale_x": 1.0328049797130308,
+        "geometry_scale_y": 1.0689889572513616,
+        "geometry_scale_z": 0.934050612171344,
+        "local_morph_factor": 0.04524769018940872,
+        "brace_probability": 0.7031226539685247,
+        "load_force": 1169.2779958998822
+      }
+    }
+  ]
+}

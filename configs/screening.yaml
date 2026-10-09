@@ -1,0 +1,5 @@
+# Operational thresholds, independent of model weights. Tune on validation cases.
+max_physics_residual: 0.25
+domain_margin: 0.02
+require_displacement: true
+max_nodes: 10000
