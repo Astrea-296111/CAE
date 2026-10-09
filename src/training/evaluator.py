@@ -7,12 +7,14 @@ from torch_geometric.loader import DataLoader
 from .metrics import regression_metrics, ranking_metrics
 from ..losses.physics_consistency_loss import torsional_angle
 from ..models import create_model
+from ..data.contract import validate_checkpoint_contract
 
 
-def load_checkpoint(path, device="cpu"):
+def load_checkpoint(path, device="cpu", require_contract=False):
     checkpoint = torch.load(Path(path), map_location="cpu", weights_only=False)
     if checkpoint.get("provenance") != "synthetic-only":
         raise ValueError("Expected a synthetic research checkpoint")
+    validate_checkpoint_contract(checkpoint, require_contract)
     model = create_model(checkpoint["kind"], checkpoint["config"])
     model.load_state_dict(checkpoint["state_dict"])
     model.to(device).eval()

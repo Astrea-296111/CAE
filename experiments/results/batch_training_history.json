@@ -1,0 +1,382 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 1.7574634909629823,
+    "val_loss": 1.2120821237564088,
+    "train_components": {
+      "stiffness": 0.8941096812486649,
+      "displacement": 0.8633538246154785
+    },
+    "gradient_norm_max_before_clip": 19.05782127380371,
+    "learning_rate": 0.001,
+    "seconds": 0.7750431019999269
+  },
+  {
+    "epoch": 2,
+    "train_loss": 1.0124000310897827,
+    "val_loss": 0.9573060512542725,
+    "train_components": {
+      "stiffness": 0.3433703392744064,
+      "displacement": 0.6690297096967697
+    },
+    "gradient_norm_max_before_clip": 14.322300910949707,
+    "learning_rate": 0.001,
+    "seconds": 0.4583206910000399
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.7304749757051467,
+    "val_loss": 0.7487246990203857,
+    "train_components": {
+      "stiffness": 0.23937807753682136,
+      "displacement": 0.49109688997268675
+    },
+    "gradient_norm_max_before_clip": 15.193300247192383,
+    "learning_rate": 0.001,
+    "seconds": 0.4842740330000197
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.5712309837341308,
+    "val_loss": 0.8314995169639587,
+    "train_components": {
+      "stiffness": 0.21275643445551395,
+      "displacement": 0.3584745466709137
+    },
+    "gradient_norm_max_before_clip": 18.59346580505371,
+    "learning_rate": 0.001,
+    "seconds": 0.45589867199998935
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.5117656141519547,
+    "val_loss": 0.47413302063941953,
+    "train_components": {
+      "stiffness": 0.2385768935084343,
+      "displacement": 0.273188716173172
+    },
+    "gradient_norm_max_before_clip": 19.9260196685791,
+    "learning_rate": 0.001,
+    "seconds": 0.5149006560000089
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.33590115755796435,
+    "val_loss": 0.581421959400177,
+    "train_components": {
+      "stiffness": 0.1282048523426056,
+      "displacement": 0.20769631266593933
+    },
+    "gradient_norm_max_before_clip": 12.09155559539795,
+    "learning_rate": 0.001,
+    "seconds": 0.48601225400000203
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.2515161395072937,
+    "val_loss": 0.3292508959770203,
+    "train_components": {
+      "stiffness": 0.08668458983302116,
+      "displacement": 0.1648315481841564
+    },
+    "gradient_norm_max_before_clip": 10.886175155639648,
+    "learning_rate": 0.001,
+    "seconds": 0.5208519159999696
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.20759616792201996,
+    "val_loss": 0.26200308799743655,
+    "train_components": {
+      "stiffness": 0.06975740492343903,
+      "displacement": 0.13783876225352287
+    },
+    "gradient_norm_max_before_clip": 5.359957695007324,
+    "learning_rate": 0.001,
+    "seconds": 0.5404732959999592
+  },
+  {
+    "epoch": 9,
+    "train_loss": 0.20292777046561242,
+    "val_loss": 0.253215354681015,
+    "train_components": {
+      "stiffness": 0.07813189774751664,
+      "displacement": 0.1247958742082119
+    },
+    "gradient_norm_max_before_clip": 12.669685363769531,
+    "learning_rate": 0.001,
+    "seconds": 0.4630113100000699
+  },
+  {
+    "epoch": 10,
+    "train_loss": 0.16210924908518792,
+    "val_loss": 0.24173873662948608,
+    "train_components": {
+      "stiffness": 0.06008692551404238,
+      "displacement": 0.10202232301235199
+    },
+    "gradient_norm_max_before_clip": 8.670952796936035,
+    "learning_rate": 0.001,
+    "seconds": 0.472013220000008
+  },
+  {
+    "epoch": 11,
+    "train_loss": 0.15654174387454986,
+    "val_loss": 0.29985482692718507,
+    "train_components": {
+      "stiffness": 0.06181579846888781,
+      "displacement": 0.09426934495568276,
+      "physics": 0.04565990073606372
+    },
+    "gradient_norm_max_before_clip": 9.915809631347656,
+    "learning_rate": 0.001,
+    "seconds": 0.7889987669999527
+  },
+  {
+    "epoch": 12,
+    "train_loss": 0.21367825865745543,
+    "val_loss": 0.30078086256980896,
+    "train_components": {
+      "stiffness": 0.11829720009118319,
+      "displacement": 0.09501162879168987,
+      "physics": 0.03694349676370621
+    },
+    "gradient_norm_max_before_clip": 17.707679748535156,
+    "learning_rate": 0.001,
+    "seconds": 0.7915874530000337
+  },
+  {
+    "epoch": 13,
+    "train_loss": 0.21501694917678832,
+    "val_loss": 0.22889160513877868,
+    "train_components": {
+      "stiffness": 0.09735379200428725,
+      "displacement": 0.11719697266817093,
+      "physics": 0.0466182641685009
+    },
+    "gradient_norm_max_before_clip": 17.770587921142578,
+    "learning_rate": 0.001,
+    "seconds": 0.8741270040000018
+  },
+  {
+    "epoch": 14,
+    "train_loss": 0.1756999112665653,
+    "val_loss": 0.25152985453605653,
+    "train_components": {
+      "stiffness": 0.06217456869781017,
+      "displacement": 0.11297096237540245,
+      "physics": 0.05543769542127848
+    },
+    "gradient_norm_max_before_clip": 13.274880409240723,
+    "learning_rate": 0.001,
+    "seconds": 0.4935591990000603
+  },
+  {
+    "epoch": 15,
+    "train_loss": 0.14451970532536507,
+    "val_loss": 0.18857789635658265,
+    "train_components": {
+      "stiffness": 0.049006633646786216,
+      "displacement": 0.09504120238125324,
+      "physics": 0.04718689005821943
+    },
+    "gradient_norm_max_before_clip": 11.176486015319824,
+    "learning_rate": 0.001,
+    "seconds": 0.4663229699999647
+  },
+  {
+    "epoch": 16,
+    "train_loss": 0.11225086823105812,
+    "val_loss": 0.15005541741847991,
+    "train_components": {
+      "stiffness": 0.03882443103939295,
+      "displacement": 0.07303608246147633,
+      "physics": 0.03903555944561958
+    },
+    "gradient_norm_max_before_clip": 6.209423542022705,
+    "learning_rate": 0.001,
+    "seconds": 0.4907163169999649
+  },
+  {
+    "epoch": 17,
+    "train_loss": 0.10101071484386921,
+    "val_loss": 0.14407364428043365,
+    "train_components": {
+      "stiffness": 0.0337354073766619,
+      "displacement": 0.06693296208977699,
+      "physics": 0.03423472288995981
+    },
+    "gradient_norm_max_before_clip": 6.804502010345459,
+    "learning_rate": 0.001,
+    "seconds": 0.5014004900000373
+  },
+  {
+    "epoch": 18,
+    "train_loss": 0.10073603130877018,
+    "val_loss": 0.17119759917259217,
+    "train_components": {
+      "stiffness": 0.03200404774397612,
+      "displacement": 0.06837160624563694,
+      "physics": 0.0360377243719995
+    },
+    "gradient_norm_max_before_clip": 8.82227897644043,
+    "learning_rate": 0.001,
+    "seconds": 1.0473662640000612
+  },
+  {
+    "epoch": 19,
+    "train_loss": 0.09820603504776955,
+    "val_loss": 0.12900194823741912,
+    "train_components": {
+      "stiffness": 0.03183031091466546,
+      "displacement": 0.06601985991001129,
+      "physics": 0.03558632228523493
+    },
+    "gradient_norm_max_before_clip": 6.983456611633301,
+    "learning_rate": 0.001,
+    "seconds": 0.5337234290000197
+  },
+  {
+    "epoch": 20,
+    "train_loss": 0.0896007239818573,
+    "val_loss": 0.12612863034009933,
+    "train_components": {
+      "stiffness": 0.027731049899011852,
+      "displacement": 0.061528914421796796,
+      "physics": 0.03407614305615425
+    },
+    "gradient_norm_max_before_clip": 7.005958080291748,
+    "learning_rate": 0.001,
+    "seconds": 0.48235635800006094
+  },
+  {
+    "epoch": 21,
+    "train_loss": 0.08057373352348804,
+    "val_loss": 0.11855117678642273,
+    "train_components": {
+      "stiffness": 0.022319101123139264,
+      "displacement": 0.057970851100981234,
+      "physics": 0.028378264605998994
+    },
+    "gradient_norm_max_before_clip": 4.657252311706543,
+    "learning_rate": 0.001,
+    "seconds": 0.4950737479999816
+  },
+  {
+    "epoch": 22,
+    "train_loss": 0.08067590072751045,
+    "val_loss": 0.09751420766115189,
+    "train_components": {
+      "stiffness": 0.026843653805553914,
+      "displacement": 0.053572351671755315,
+      "physics": 0.0259893964510411
+    },
+    "gradient_norm_max_before_clip": 7.533881187438965,
+    "learning_rate": 0.001,
+    "seconds": 0.4065224930000113
+  },
+  {
+    "epoch": 23,
+    "train_loss": 0.08469303958117962,
+    "val_loss": 0.13600837290287018,
+    "train_components": {
+      "stiffness": 0.0408847576007247,
+      "displacement": 0.04360238797962666,
+      "physics": 0.020589482225477695
+    },
+    "gradient_norm_max_before_clip": 8.339165687561035,
+    "learning_rate": 0.001,
+    "seconds": 0.4284304020000036
+  },
+  {
+    "epoch": 24,
+    "train_loss": 0.08550229594111443,
+    "val_loss": 0.13348998725414277,
+    "train_components": {
+      "stiffness": 0.03640005281195045,
+      "displacement": 0.048797980137169364,
+      "physics": 0.030426169093698264
+    },
+    "gradient_norm_max_before_clip": 10.296675682067871,
+    "learning_rate": 0.001,
+    "seconds": 0.41131152700006623
+  },
+  {
+    "epoch": 25,
+    "train_loss": 0.08493022695183754,
+    "val_loss": 0.12437965571880341,
+    "train_components": {
+      "stiffness": 0.04039267105981707,
+      "displacement": 0.044309374317526816,
+      "physics": 0.022818221943452954
+    },
+    "gradient_norm_max_before_clip": 8.309375762939453,
+    "learning_rate": 0.001,
+    "seconds": 0.4125618169999825
+  },
+  {
+    "epoch": 26,
+    "train_loss": 0.0648114688694477,
+    "val_loss": 0.10480360984802246,
+    "train_components": {
+      "stiffness": 0.020801900327205657,
+      "displacement": 0.04381699077785015,
+      "physics": 0.019257739279419185
+    },
+    "gradient_norm_max_before_clip": 5.681267738342285,
+    "learning_rate": 0.001,
+    "seconds": 0.4487328540000135
+  },
+  {
+    "epoch": 27,
+    "train_loss": 0.07177669852972031,
+    "val_loss": 0.0858523577451706,
+    "train_components": {
+      "stiffness": 0.02512490302324295,
+      "displacement": 0.04642212204635143,
+      "physics": 0.02296727504581213
+    },
+    "gradient_norm_max_before_clip": 5.289203643798828,
+    "learning_rate": 0.001,
+    "seconds": 0.4574434379999275
+  },
+  {
+    "epoch": 28,
+    "train_loss": 0.05978056639432907,
+    "val_loss": 0.07672901749610901,
+    "train_components": {
+      "stiffness": 0.021595509396865963,
+      "displacement": 0.03800556026399136,
+      "physics": 0.01794971451163292
+    },
+    "gradient_norm_max_before_clip": 5.131321907043457,
+    "learning_rate": 0.001,
+    "seconds": 0.9548060490000125
+  },
+  {
+    "epoch": 29,
+    "train_loss": 0.060429034382104875,
+    "val_loss": 0.06643918305635452,
+    "train_components": {
+      "stiffness": 0.021464222529903054,
+      "displacement": 0.03876064494252205,
+      "physics": 0.020416648592799902
+    },
+    "gradient_norm_max_before_clip": 5.112188339233398,
+    "learning_rate": 0.001,
+    "seconds": 0.538545202000023
+  },
+  {
+    "epoch": 30,
+    "train_loss": 0.048108242079615594,
+    "val_loss": 0.07583037912845611,
+    "train_components": {
+      "stiffness": 0.01357547624502331,
+      "displacement": 0.034339139424264434,
+      "physics": 0.019362623756751417
+    },
+    "gradient_norm_max_before_clip": 3.416424512863159,
+    "learning_rate": 0.001,
+    "seconds": 0.5301841119999153
+  }
+]

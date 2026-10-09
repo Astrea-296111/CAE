@@ -1,0 +1,59 @@
+{
+  "provenance": "synthetic-only",
+  "kind": "physics",
+  "best_epoch": 29,
+  "dataset_sha256": "5d5d9ee2ab09c52852b513a0aed9b5ba4b46c8747ef13108aee00a10a66e3fda",
+  "splits": {
+    "val": {
+      "MAE": 318818.1,
+      "RMSE": 394358.69478847133,
+      "MAPE_percent": 5.714344812017844,
+      "P90_relative_error_percent": 10.010032189097247,
+      "P95_relative_error_percent": 13.093620817354871,
+      "Max_relative_error_percent": 14.819827831605805,
+      "R2": 0.9705432222257356,
+      "Top5_Recall": 0.8,
+      "Top10_Recall": 1.0,
+      "Top20_Recall": 0.95,
+      "Spearman": 0.9835372636262512,
+      "node_displacement_MAE_m": 5.532771865546238e-06,
+      "node_displacement_RMSE_m": 1.0831267900357489e-05,
+      "nonpositive_angle_fraction": 0.0,
+      "mean_torque_consistency_residual": 0.10908809896085121
+    },
+    "test": {
+      "MAE": 369756.39166666666,
+      "RMSE": 469178.20917619485,
+      "MAPE_percent": 6.15363881500099,
+      "P90_relative_error_percent": 11.879996213125105,
+      "P95_relative_error_percent": 15.56367729141692,
+      "Max_relative_error_percent": 16.5279058693578,
+      "R2": 0.9481574436117315,
+      "Top5_Recall": 1.0,
+      "Top10_Recall": 0.8,
+      "Top20_Recall": 0.9,
+      "Spearman": 0.9688542825361514,
+      "node_displacement_MAE_m": 5.118791250424692e-06,
+      "node_displacement_RMSE_m": 1.0377960279583931e-05,
+      "nonpositive_angle_fraction": 0.0,
+      "mean_torque_consistency_residual": 0.13223989297883346
+    },
+    "ood": {
+      "MAE": 1309929.5166666666,
+      "RMSE": 1825810.1738162409,
+      "MAPE_percent": 10.290927903405194,
+      "P90_relative_error_percent": 21.970399126770126,
+      "P95_relative_error_percent": 24.480489232116714,
+      "Max_relative_error_percent": 26.647382332075615,
+      "R2": 0.7049057606540048,
+      "Top5_Recall": 0.8,
+      "Top10_Recall": 0.9,
+      "Top20_Recall": 0.85,
+      "Spearman": 0.9408231368186873,
+      "node_displacement_MAE_m": 3.5295115594635718e-06,
+      "node_displacement_RMSE_m": 6.084814685891615e-06,
+      "nonpositive_angle_fraction": 0.0,
+      "mean_torque_consistency_residual": 0.13191146614611918
+    }
+  }
+}
